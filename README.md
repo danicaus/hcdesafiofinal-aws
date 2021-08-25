@@ -7,11 +7,13 @@ O desafio é desenhar uma página com a temática da AWS usando VTEX IO.
 
 ## Experiência do consumidor
 
+![image](https://user-images.githubusercontent.com/38079926/130831377-f02facb5-e781-4b32-96d7-5b7d9bd85c33.png)
+
 Ao entrar na página, o usuário encontrará um modal com um formulário para se cadastrar para receber novidades. Coletaremos informações de Nome, E-mail e Telefone.
 
 Ao sair do modal, o cliente encontrará uma página com os serviços AWS. Teremos oferta de produtos com preços. Ao clicar no botão "comprar" o serviço é adicionado ao carrinho.
 
-No menu superior, o cliente poderá navegar até uma página de "Sobre", onde terão informações sobre missão, visão e valores da AWS, conforme a [página original aws] (https://aws.amazon.com/pt/about-aws/).
+No menu superior, o cliente poderá navegar até uma página de "Sobre", onde terão informações sobre missão, visão e valores da AWS, conforme a [página original aws](https://aws.amazon.com/pt/about-aws/).
 
 Ao finalizar a compra, o cliente é direcionado para uma página de checkout, onde serão coletados dados de cartão, E-mail e Telefone. Coletaremos essas informações com nossa API.
 
