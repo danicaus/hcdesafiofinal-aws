@@ -1,7 +1,7 @@
 {
   "vendor": "hiringcoders202123",
-  "name": "hcaws23",
-  "version": "0.1.1",
+  "name": "projeto-final",
+  "version": "0.0.1",
   "builders": {
     "styles": "2.x",
     "store": "0.x",
