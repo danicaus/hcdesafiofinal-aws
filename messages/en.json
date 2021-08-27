@@ -1,0 +1,15 @@
+{
+  "admin-example.navigation.label-group": "Leads",
+  "admin-example.navigation.tableCustumers": "Customers",
+  "admin-example.navigation.tableProspectus": "Prospects",
+
+  "admin-example.navigation.search.kws": "Leads, Control, AWS",
+  "admin-example.navigation.search.kwsCustumers": "customers",
+  "admin-example.navigation.search.kwsProspectus": "prospects",
+
+  "admin-example.Customers": "Client management",
+  "admin-example.Prospectus": "Prospect management",
+
+  "admin-example.CustomersId": "Selected customer details",
+  "admin-example.ProspectusId": "Selected prospect details"
+}

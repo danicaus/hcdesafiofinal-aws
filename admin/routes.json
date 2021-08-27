@@ -1,0 +1,18 @@
+{
+  "admin.app.admin-prospectus": {
+    "component": "Prospectus",
+    "path": "/admin/app/tableProspectus"
+  },
+  "admin.app.admin-prospectusId": {
+    "component": "ProspectusId",
+    "path": "/admin/app/tableProspectus/:id"
+  },
+  "admin.app.admin-customers": {
+    "component": "Customers",
+    "path": "/admin/app/tableCustumers"
+  },
+  "admin.app.admin-customersId": {
+    "component": "CustomersId",
+    "path": "/admin/app/tableCustumers/:id"
+  }
+}

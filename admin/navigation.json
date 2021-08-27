@@ -1,0 +1,18 @@
+{
+  "section": "orders",
+  "titleId": "admin-example.navigation.label-group",
+  "subSection": "example",
+  "searchKeyWordsHelpers": "admin-example.navigation.search.kws",
+  "subSectionItems": [
+    {
+      "labelId": "admin-example.navigation.tableProspectus",
+      "path": "/admin/tableProspectus",
+      "searchKeyWordsHelpersProspectus": "admin-example.navigation.search.kwsProspectus"
+    },
+    {
+      "labelId": "admin-example.navigation.tableCustumers",
+      "path": "/admin/tableCustumers",
+      "searchKeyWordsHelpersCustumers": "admin-example.navigation.search.kwsCustumers"
+    }
+  ]
+}
