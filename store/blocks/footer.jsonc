@@ -1,20 +1,26 @@
 {
-	"footer": {
-		"blocks": ["footer-layout.desktop", "footer-layout.mobile"]
-	},
-	"footer-layout.desktop": {
-		"children": ["flex-layout.row#footer"]
-	},
-	"footer-layout.mobile": {
-		"children": ["flex-layout.row#footer"]
-	},
-	"flex-layout.row#footer": {
-		"children": ["image"]
-	},
-	"image": {
-		"props": {
-			"width": 100,
-			"src": "https://github.com/danicaus/hcdesafiofinal-aws/assets/project/images/logo/aws-logo-desktop-59x35.png"
-		}
-	}
+  "footer": {
+    "blocks": ["footer-layout.desktop", "footer-layout.mobile"]
+  },
+  "footer-layout.desktop": { 
+    "children": [
+      "flex-layout.row#footer"
+    ]
+  },
+  "footer-layout.mobile": { 
+    "children": [
+      "flex-layout.row#footer"
+    ]
+  },
+  "flex-layout.row#footer": { 
+    "children": [
+      "image"
+    ]
+  },
+  "image": {
+    "props": {
+      "width": 100,
+      "src": "https://brand.vtex.com/static/media/VTEX_pink_RGB.751a9fb5.svg"
+    }
+  }
 }

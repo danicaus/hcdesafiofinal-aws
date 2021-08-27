@@ -1,0 +1,15 @@
+.sliderLayoutContainer {
+    /* max-width: 1400px; */
+/*    margin: 100px auto;*/
+}
+
+
+.paginationDot {
+    margin-bottom: 50px;
+    background-color: rgb(184, 184, 184);
+}
+
+.paginationDot--isActive {
+    background-color: #FF5500;
+}
+

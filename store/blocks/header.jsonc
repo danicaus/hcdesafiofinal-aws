@@ -33,6 +33,25 @@
       "minicart.v2"
     ]
   },
+  "flex-layout.col#spacer": {
+    "props": {
+      "width": "grow"
+    }
+  },
+  "flex-layout.col#logo-desktop": {
+    "props": {
+      "verticalAlign": "middle"
+    },
+    "children": ["logo"]
+  },
+  "logo": {
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "url": "https://brand.vtex.com/static/media/VTEX_pink_RGB.751a9fb5.svg",
+      "width": "80"
+    }
+  },
   "header-layout.mobile": {
     "children": ["sticky-layout#mobile"]
   },
@@ -42,7 +61,7 @@
   "flex-layout.row#mobile": {
     "children": [
       "drawer",
-      "logo#mobile",
+      "logo",
       "flex-layout.col#spacer",
       "login",
       "minicart.v2"
@@ -54,37 +73,7 @@
       "fullWidth": true
     }
   },
-  "flex-layout.col#logo-desktop": {
-    "props": {
-      "verticalAlign": "middle"
-    },
-    "children": ["logo#desktop"]
-  },
   "drawer": {
     "children": []
-  },
-  "search-bar": {
-    "props": {
-      "placeholder": "BUSCAR"
-    }
-  },
-  "flex-layout.col#spacer": {
-    "props": {
-      "width": "grow"
-    }
-  },
-  "logo#desktop": {
-    "props": {
-      "title": "Logo",
-      "href": "/",
-      "url": "https://github.com/danicaus/hcdesafiofinal-aws/assets/project/images/logo/aws-logo-desktop.png"
-    }
-  },
-  "logo#mobile": {
-    "props": {
-      "title": "Logo",
-      "href": "/",
-      "url": "https://github.com/danicaus/hcdesafiofinal-aws/assets/project/images/logo/aws-logo-mobile.png"
-    }
   }
 }

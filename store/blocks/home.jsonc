@@ -1,15 +1,64 @@
 {
   "store.home": { 
     "blocks": [
-      "rich-text"
+    //  "flex-layout.row",
+      "slider-layout#demo-images"
     ]
   },
-  "rich-text": { 
-    "props": { 
-      "text": "Projeto Final",
-      "textAlignment": "CENTER",
-      "textPosition": "CENTER",
-      "font": "t-heading-1"
+/*   "flex-layout.row":{
+    "children": [
+      "slider-layout#demo-images"
+    ]
+  }, */
+
+    "slider-layout#demo-images": {
+      "children": ["info-card#1","info-card#2","info-card#3"],
+      "props": {
+        "itemsPerPage": {
+          "desktop": 1,
+          "tablet": 1,
+          "phone": 1
+        },
+        "infinite": true
+      }
+    },
+    "info-card#1": {
+      "props": {
+        "isFullModeStyle": true,
+        "imageUrl": "https://raw.githubusercontent.com/danicaus/hcdesafiofinal-aws/frontend/assets/project/images/background/background4.png",
+        "textPosition": "center",
+        "headline": "Título aqui 1",
+        "subhead": "subtítulo aqui 1",
+        "callToActionMode": "button",
+        "callToActionText": "Título botão aqui",
+        "callToActionUrl": "/sale/d",
+        "textAlignment": "center"
+      }
+    },
+    "info-card#2": {
+      "props": {
+        "isFullModeStyle": true,
+        "imageUrl": "https://raw.githubusercontent.com/danicaus/hcdesafiofinal-aws/frontend/assets/project/images/background/background5.png",
+        "textPosition": "center",
+        "headline": "Título aqui 1",
+        "subhead": "subtítulo aqui 1",
+        "callToActionMode": "button",
+        "callToActionText": "Título botão aqui",
+        "callToActionUrl": "/sale/d",
+        "textAlignment": "center"
+      }
+    },
+    "info-card#3": {
+      "props": {
+        "isFullModeStyle": true,
+        "imageUrl": "https://raw.githubusercontent.com/danicaus/hcdesafiofinal-aws/frontend/assets/project/images/background/background6.png",
+        "textPosition": "center",
+        "headline": "Título aqui 1",
+        "subhead": "subtítulo aqui 1",
+        "callToActionMode": "button",
+        "callToActionText": "Título botão aqui",
+        "callToActionUrl": "/sale/d",
+        "textAlignment": "center"
+      }
     }
-  }
 }
