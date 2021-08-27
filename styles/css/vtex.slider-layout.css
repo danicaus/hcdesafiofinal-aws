@@ -1,0 +1,31 @@
+.sliderLayoutContainer {
+  padding: 0;
+  margin: 0;
+}
+
+.slideChildrenContainer {
+  padding: 0;
+  margin: 0;
+}
+
+.caretIcon {
+  color: #ffffff;
+}
+
+.caretIcon--carousel:hover {
+  color: #8a8a8a;
+}
+
+.sliderArrows--carousel {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.paginationDot {
+  background-color: rgba(255, 255, 255, 0.3);
+  margin-bottom: 15px;
+}
+
+.paginationDot--isActive {
+  background-color: #fafafa;
+}

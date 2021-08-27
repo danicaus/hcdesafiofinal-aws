@@ -1,0 +1,45 @@
+{
+  "slider-layout#home": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "autoplay": {
+        "timeout": 5000,
+        "stopOnHover": false
+      },
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "blockClass": "carousel"
+    },
+    "children": ["image#slider1", "image#slider2", "image#slider3"]
+  },
+
+  "image#slider1": {
+    "props": {
+      //"src": "assets/project/images/slider/aws-b1.png",
+      "src": "https://i.ibb.co/QKykwFh/aws-b1.png",
+      "title": "Infraestrutura de dados",
+      "alt": "Modernize sua infraestrutura de dados",
+      "height": 357
+    }
+  },
+  "image#slider2": {
+    "props": {
+      "src": "https://i.ibb.co/Sxr69FP/aws-b2.png",
+      "title": "Amazon Redshift",
+      "alt": "Amazon Redshift",
+      "height": 357
+    }
+  },
+  "image#slider3": {
+    "props": {
+      "src": "https://i.ibb.co/7CvFPq2/aws-b3.png",
+      "title": "Amazon Location Service",
+      "alt": "Amazon Location Service",
+      "height": 357
+    }
+  }
+}
