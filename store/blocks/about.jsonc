@@ -1,0 +1,99 @@
+{
+  "store.custom#about": {
+    "blocks": ["flex-layout.row#about-us"]
+  },
+  "flex-layout.row#about-us": {
+    "props": {
+      "blockClass": "container-main"
+    },
+    "children": [
+      // "image#about-us",
+      "flex-layout.col#text-about-us"
+    ]
+  },
+  "flex-layout.col#text-about-us": {
+    "children": [
+      "rich-text#about-title",
+      "rich-text#about-content",
+      "rich-text#subtitle-1",
+      "rich-text#paragraph-1",
+      "rich-text#subtitle-2",
+      "rich-text#paragraph-2",
+      "rich-text#subtitle-3",
+      "rich-text#paragraph-3",
+      "rich-text#subtitle-4",
+      "rich-text#paragraph-4"
+    ],
+    "props": {
+      "blockClass": "col-about-us",
+      "preventVerticalStretch": true
+    }
+  },
+  "rich-text#about-title": {
+    "props": {
+      "blockClass":"title-about",
+      "text": "# Sobre a AWS"
+    }
+  },
+  "rich-text#about-content": {
+    "props": {
+      "blockClass":"paragraph-about",
+      "text": "Em 2006, a Amazon Web Services (AWS) começou a oferecer serviços de infraestrutura de TI para empresas por meio de serviços web – hoje conhecidos como computação em nuvem. Um dos principais benefícios da computação em nuvem é a oportunidade de substituir diretamente gastos com a infraestrutura principal por preços variáveis baixos, que se ajustam de acordo com sua empresa. Com a Nuvem, as empresas não precisam mais planejar ou adquirir servidores, assim como outras infraestruturas de TI, com semanas ou meses de antecedência. Em vez disso, podem instantaneamente rodar centenas de milhares de servidores em minutos e oferecer resultados mais rapidamente. \n\nAtualmente, a Amazon Web Services oferece uma plataforma de infraestrutura altamente confiável, escalável e de baixo custo na nuvem que potencializa centenas de milhares de empresas em 190 países ao redor do mundo. Com datacenters localizados nos EUA, Europa, Brasil, Cingapura, Japão e Austrália, clientes de todos os setores estão tendo vantagens com os seguintes benefícios:"
+    }
+  },
+  "rich-text#subtitle-1": {
+    "props": {
+      "blockClass":"subtitle-about",
+      "text": "### Baixo custo"
+    }
+  },
+  "rich-text#paragraph-1": {
+    "props": {
+      "blockClass":"text-box",
+      "text": "A AWS oferece preços baixos e do tipo pague o que usar, sem despesas iniciais nem compromissos em longo prazo. Somos capazes de construir e gerenciar uma infraestrutura em escala global e passar os benefícios de redução de custos para você sob a forma de preços mais baixos. Com a eficiência de nosso dimensionamento e expertise, foi possível reduzir preços em 15 diferentes ocasiões nos últimos quatro anos. [Visite o Centro de informações sobre economia para saber mais.](https://aws.amazon.com/pt/economics/)"
+    }
+  },
+  "rich-text#subtitle-2": {
+    "props": {
+      "blockClass":"subtitle-about",
+      "text": "### Agilidade e elasticidade instantânea"
+    }
+  },
+  "rich-text#paragraph-2": {
+    "props": {
+      "blockClass":"text-box",
+      "text": "A AWS fornece uma ampla infraestrutura de nuvem global que permite realizar mudanças, experimentar e interagir rapidamente. Em vez de esperar semanas ou meses pelo hardware, você pode instantaneamente implantar novos aplicativos, expandir instantaneamente à medida que sua carga de trabalho cresce e instantaneamente reduzir com base na demanda. Se você precisa de um ou milhares de servidores virtuais, se precisa deles por algumas horas ou todos os dias, ainda assim você só paga pelo que utiliza. [Visite o Centro de informações sobre arquitetura para saber mais.](https://aws.amazon.com/pt/architecture/)"
+    }
+  },
+  "rich-text#subtitle-3": {
+    "props": {
+      "blockClass":"subtitle-about",
+      "text": "### Aberta e flexível"
+    }
+  },
+  "rich-text#paragraph-3": {
+    "props": {
+      "blockClass":"text-box",
+      "text": "A AWS é uma plataforma e um sistema operacional de linguagem independente. Você escolhe a plataforma de desenvolvimento ou o modelo de programação que faz mais sentido para o seu negócio. Você pode escolher os serviços que deseja usar, um ou vários, e escolher como usá-los. Essa flexibilidade permite que você se concentre na inovação, não na infraestrutura. [Faça o download do Whitepaper sobre a visão geral da AWS.](https://d36cz9buwru1tt.cloudfront.net/AWS_Overview.pdf)"
+    }
+  },
+  "rich-text#subtitle-4": {
+    "props": {
+      "blockClass":"subtitle-about",
+      "text": "### Seguro"
+    }
+  },
+  "rich-text#paragraph-4": {
+    "props": {
+      "blockClass":"text-box",
+      "text": "A AWS é uma plataforma de tecnologia segura e durável com certificações e auditorias reconhecidas pelo setor: PCI DSS Level 1, ISO 27001, FISMA Moderate, FedRAMP, HIPAA, e relatórios de auditoria SOC 1 (anteriormente referida como SAS 70 e/ou SSAE 16) e SOC 2. Nossos datacenters e centros de serviços têm várias camadas de segurança física e operacional para garantir a integridade e a segurança dos seus dados.  [Visite o Centro de informações sobre segurança para saber mais.](https://aws.amazon.com/pt/security/)"
+    }
+  },
+
+  "image#about-us": {
+    "props": {
+      "src": "https://storecomponents.vteximg.com.br/arquivos/mobile-phone.png",
+      "maxHeight": "600px"
+    }
+  }
+}
