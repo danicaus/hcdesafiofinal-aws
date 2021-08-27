@@ -1,0 +1,72 @@
+{
+  "link#linkedin1": {
+    "props": {
+      "blockClass": ["link-col"],
+      "href": "/",
+      "label": "Adams Gawlinski Florisbal"
+    }
+  },
+  "link#linkedin2": {
+    "props": {
+      "blockClass": ["link-col"],
+      "href": "/",
+      "label": "Cristiano Vieira"
+    }
+  },
+  "link#linkedin3": {
+    "props": {
+      "blockClass": ["link-col"],
+      "href": "/",
+      "label": "Daniela Caus"
+    }
+  },
+  "link#linkedin4": {
+    "props": {
+      "blockClass": ["link-col"],
+      "href": "/",
+      "label": "Danilo Mendes"
+    }
+  },
+  "link#linkedin5": {
+    "props": {
+      "blockClass": ["link-col"],
+      "href": "/",
+      "label": "Driele Soriano"
+    }
+  },
+  "link#linkedin6": {
+    "props": {
+      "blockClass": ["link-col"],
+      "href": "/",
+      "label": "Gisela R. Mascarenhas"
+    }
+  },
+  "link#linkedin7": {
+    "props": {
+      "blockClass": ["link-col"],
+      "href": "/",
+      "label": "Ivan Cardoso"
+    }
+  },
+  "link#linkedin8": {
+    "props": {
+      "blockClass": ["link-col"],
+      "href": "/",
+      "label": "Leonardo M. S. da Silva"
+    }
+  },
+  "link#linkedin9": {
+    "props": {
+      "blockClass": ["link-col"],
+      "href": "/",
+      "label": "Natan Souza"
+    }
+  },
+  "link#linkedin10": {
+    "props": {
+      "blockClass": ["link-col"],
+      "href": "/",
+      "label": "Paulo Eduardo"
+    }
+  }
+}

@@ -1,0 +1,17 @@
+.link--link-col {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.link--link-col:hover{
+  color: #e47911;
+}
+
+.link--link-group {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  margin-bottom: 50px;
+}

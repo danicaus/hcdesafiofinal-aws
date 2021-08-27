@@ -1,0 +1,28 @@
+.flexRowContent--footer-content {
+  max-width: 100%;
+}
+
+.flexCol--footer-content-col1 {
+  max-width:240px;
+}
+
+.flexCol--footer-content-col1-desktop {
+  max-width:300px;
+}
+
+.flexCol--footer-content-col2{
+  max-width:320px;
+}
+
+.flexRowContent--footer-copyright {
+  background: #EAEDED;
+  width: 100%;
+}
+
+.flexRowContent--row-social-media {
+  width: 200px;
+}
+
+.flexCol--content-col1-mobile  {
+  max-width: 450px;
+}
