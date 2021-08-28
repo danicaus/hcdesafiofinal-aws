@@ -1,11 +1,5 @@
-.sliderLayoutContainer {
-    /* max-width: 1400px; */
-/*    margin: 100px auto;*/
-}
-
-
 .paginationDot {
-    margin-bottom: 50px;
+    margin-bottom: 1.5rem;
     background-color: rgb(184, 184, 184);
 }
 
@@ -13,3 +7,18 @@
     background-color: #FF5500;
 }
 
+.caretIcon {
+    color: white;
+    opacity: .2;
+}
+
+.caretIcon:hover {
+    color: white;
+    opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+    .caretIcon {
+        display: none;
+    }
+}
