@@ -24,7 +24,7 @@
   "link#linkedin4": {
     "props": {
       "blockClass": ["link-col"],
-      "href": "/",
+      "href": "https://www.linkedin.com/in/danilomdsdev/",
       "target": "_blank",
       "label": "Danilo Mendes"
     }
