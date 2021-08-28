@@ -1,15 +1,121 @@
 {
   "store.home": { 
     "blocks": [
-      "rich-text"
+      "slider-layout#demo-images"
     ]
   },
-  "rich-text": { 
-    "props": { 
-      "text": "Projeto Final",
-      "textAlignment": "CENTER",
-      "textPosition": "CENTER",
-      "font": "t-heading-1"
+
+  "slider-layout#demo-images": {
+      "children": [
+        "info-card#1",
+        "info-card#2",
+        "info-card#3",
+        "info-card#4",
+        "info-card#5",
+        "info-card#6"
+      ],
+      "props": {
+        "itemsPerPage": {
+          "desktop": 1,
+          "tablet": 1,
+          "phone": 1
+        },
+        "infinite": true,
+        "autoplay": {
+          "timeout": 5000,
+          "stopOnHover": true
+        }
+      }
+    },
+    "info-card#1": {
+      "props": {
+        "isFullModeStyle": true,
+        "preventVerticalStretch": true,
+        "preventHorizontalStretch": true,
+        "imageUrl": "assets/slider/background1b.png",
+        "mobileImageUrl": "assets/slider/backgroundMobile1b.jpg",
+        "textPosition": "left",
+        "headline": "AWS Lambda",
+        "subhead": "Execute código sem se preocupar com servidores ou clusters. Pague somente pelo que usar.",
+        "callToActionMode": "button",
+        "callToActionText": "Começar a usar o AWS Lambda",
+        "callToActionUrl": "/aws/aws-lambda",
+        "textAlignment": "center"
+      }
+    },
+    "info-card#2": {
+      "props": {
+        "isFullModeStyle": true,
+        "preventVerticalStretch": true,
+        "imageUrl": "assets/slider/background2.png",
+        "mobileImageUrl": "assets/slider/backgroundMobile2.jpg",
+        "textPosition": "left",
+        "headline": "Amazon DynamoDB",
+        "subhead": "Serviço de banco de dados NoSQL rápido e flexível para qualquer escala",
+        "callToActionMode": "button",
+        "callToActionText": "Crie uma conta da AWS",
+        "callToActionUrl": "/aws/amazon-dynamo-db",
+        "textAlignment": "center"
+      }
+    },
+    "info-card#3": {
+      "props": {
+        "isFullModeStyle": true,
+        "preventVerticalStretch": true,
+        "imageUrl": "assets/slider/background3.png",
+        "mobileImageUrl": "assets/slider/backgroundMobile3.jpg",
+        "textPosition": "left",
+        "headline": "AWS Auto Scaling",
+        "subhead": "Escalabilidade de aplicativos para otimizar desempenho e custos",
+        "callToActionMode": "button",
+        "callToActionText": "Conceitos básicos do AWS Auto Scaling",
+        "callToActionUrl": "/aws/aws-auto-scaling",
+        "textAlignment": "center"
+      }
+    },
+    "info-card#4": {
+      "props": {
+        "isFullModeStyle": true,
+        "preventVerticalStretch": true,
+        "imageUrl": "assets/slider/background4.png",
+        "mobileImageUrl": "assets/slider/backgroundMobile4.jpg",
+        "textPosition": "left",
+        "headline": "Amazon EC2",
+        "subhead": "Capacidade de computação segura e redimensionável para oferecer suporte a praticamente qualquer carga de trabalho",
+        "callToActionMode": "button",
+        "callToActionText": "Comece a usar o Amazon EC2",
+        "callToActionUrl": "/aws/amazon-ec2",
+        "textAlignment": "center"
+      }
+    },
+    "info-card#5": {
+      "props": {
+        "isFullModeStyle": true,
+        "preventVerticalStretch": true,
+        "imageUrl": "assets/slider/background5.png",
+        "mobileImageUrl": "assets/slider/backgroundMobile5.jpg",
+        "textPosition": "left",
+        "headline": "Amazon Virtual Private Cloud",
+        "subhead": "Crie em uma rede virtual isolada logicamente na Nuvem AWS",
+        "callToActionMode": "button",
+        "callToActionText": "Crie uma conta da AWS",
+        "callToActionUrl": "/aws/amazon-vpc",
+        "textAlignment": "center"
+      }
+    },
+    "info-card#6": {
+      "props": {
+        "isFullModeStyle": true,
+        "preventVerticalStretch": true,
+        "imageUrl": "assets/slider/background6.png",
+        "mobileImageUrl": "assets/slider/backgroundMobile6.jpg",
+        "textPosition": "left",
+        "headline": "Amazon S3 Glacier e S3 Glacier Deep Archive",
+        "subhead": "Classes de armazenamento de objetos de longo prazo, seguras e resilientes do Amazon S3 a partir de 1 USD por terabyte por mês",
+        "callToActionMode": "button",
+        "callToActionText": "Comece a usar o Amazon S3",
+        "callToActionUrl": "/aws/amazon-s3",
+        "textAlignment": "center"
+      }
     }
-  }
 }
