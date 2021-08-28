@@ -1,0 +1,31 @@
+.link.link--header {
+  text-decoration: none;
+  color: #dddddd;
+  padding-right: 8px;
+  padding-left: 10px;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.link.link--header:hover {
+  color: #f8991d;
+  text-decoration: none;
+}
+
+.link--link-col {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.link--link-col:hover{
+  color: #e47911;
+}
+
+.link--link-group {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  margin-bottom: 50px;
+}

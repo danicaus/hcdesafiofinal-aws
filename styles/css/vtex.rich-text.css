@@ -1,0 +1,22 @@
+.paragraph--amazon-text {
+  color: #fff;
+  max-width: 340px;
+}
+
+.container--title-group {
+  margin-top:0;
+}
+
+.paragraph--text-copyright {
+  color: #000;
+  font-size: 14px;
+}
+
+.link--text-copyright {
+  color: #000;
+  text-decoration: none;
+  font-weight: 500;
+}
+.link--text-copyright:hover {
+  color: #e47911;
+}

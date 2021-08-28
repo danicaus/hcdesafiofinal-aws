@@ -1,0 +1,45 @@
+.container :global(.vtex-button) {
+  background-color: #ec7211;
+  background-image: linear-gradient(180deg,#f67c1b 0,#e15500);
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 3px;
+  border-color: #e76d0c #e15500 #e15500;
+  box-shadow: inset 0 1px 0 hsla(0,0%,100%,.2);
+  padding: 4px 18px;
+  min-height: 30px;
+  margin-left: 13px;
+}
+
+.container :global(.vtex-button):hover {
+  background-color: #eb5f07;
+  background-image: linear-gradient(180deg,#e76d0c 0,#d74b00);
+}
+
+.label{
+  display: block;
+  color: #fff;
+  text-shadow: rgba(0,0,0,.05) 0 1px 0;
+  font-weight: 500;
+  padding: 0;
+  text-transform: none;
+  font-size: 14px;
+}
+
+.container :global(.vtex-button__label.ph6), 
+.buttonLink :global(.vtex-button__label.ph4) {
+  padding: 0 !important;
+}
+
+:global(.vtex-store-drawer-0-x-childrenContainer--burguer-menu) .buttonLink :global(.vtex-button__label) {
+  justify-content: left;
+  margin-left: .25rem;
+}
+
+:global(.vtex-store-drawer-0-x-childrenContainer--burguer-menu) .label {
+  color: #f8991d;
+}
+
+:global(.vtex-store-drawer-0-x-childrenContainer--burguer-menu) .container :global(.relative) {
+  width: 100%;
+}
