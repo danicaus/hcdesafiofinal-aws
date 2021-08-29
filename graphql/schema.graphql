@@ -1,0 +1,25 @@
+type Lead {
+  situation: String
+  phone: String!
+  email: String!
+  name: String!
+  clientDate: String
+  prospectDate: String
+}
+
+input LeadInput {
+  phone: String!
+  email: String!
+  name: String!
+}
+
+type Query {
+  lead(email: String!): Lead
+  leads: [Lead]   
+}
+
+type Mutation {
+  deleteLead(email: String): String
+  updateLead(email: String!): String
+  newLead(Lead: LeadInput!): String
+}

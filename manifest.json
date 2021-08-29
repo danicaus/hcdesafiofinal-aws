@@ -2,10 +2,15 @@
   "vendor": "vtex",
   "name": "admin-example",
   "version": "0.1.0",
+  "title": "GraphQL Example",
+  "description": "Reference app for VTEX IO GraphQL Services",
+  "mustUpdateAt": "2022-01-04",
+  "categories": [],
   "builders": {
     "styles": "2.x",
     "store": "0.x",
     "docs": "0.x",
+    "graphql": "1.x",
     "node": "6.x"
   },
   "scripts": {
@@ -41,6 +46,7 @@
       "name": "colossus-write-logs"
     },
     {
+      "name": "graphql-query"
       "name": "vbase-read-write"
     }
   ],
