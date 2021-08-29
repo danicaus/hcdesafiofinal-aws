@@ -1,36 +1,51 @@
-import { ClientsConfig, LRUCache, Service, ServiceContext } from '@vtex/api'
 
+import {
+  Service,
+  ServiceContext,
+  ParamsContext,
+  RecorderState,
+  method,
+} from '@vtex/api'
 import { Clients } from './clients'
-
-const TIMEOUT_MS = 5000
-
-const memoryCache = new LRUCache<string, any>({ max: 5000 })
-
-metrics.trackCache('status', memoryCache)
-
-const clients: ClientsConfig<Clients> = {
-  implementation: Clients,
-  options: {
-    default: {
-      retries: 2,
-      timeout: TIMEOUT_MS,
-    },
-    status: {
-      memoryCache,
-    },
-  },
-}
+import { getOrderId } from './middlewares/getOrder'
+import { lead } from './resolvers/lead'
+import { leads } from './resolvers/leads'
+import { deleteLead } from './resolvers/deleteLead'
+import { updateLead } from './resolvers/updateLead'
+import { newLead } from './resolvers/newLead'
 
 declare global {
-  type Context = ServiceContext<Clients>
+  type Context = ServiceContext<Clients, State>
+
+  interface State extends RecorderState {}
 }
 
-// Export a service that defines route handlers and client options.
-export default new Service<Clients, {}>({
-  clients,
+export default new Service<Clients, State, ParamsContext>({
+  clients: {
+    implementation: Clients,
+    options: {
+      default: {
+        retries: 2,
+        timeout: 10000,
+      },
+    },
+  },
+  routes: {
+    order_hook: method({
+      POST: [getOrderId],
+    }),
+  },
   graphql: {
     resolvers: {
-      Query: {},
+      Mutation: {
+        deleteLead,
+        updateLead,
+        newLead,
+      },
+      Query: {
+        lead,
+        leads,
+      },
     },
   },
 })

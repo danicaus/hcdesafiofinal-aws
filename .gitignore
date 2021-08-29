@@ -1,3 +1,6 @@
+
+/Other
+
 ### SublimeText ###
 *.sublime-workspace
 
@@ -33,6 +36,12 @@ docs/_book/
 npm-debug.log
 .build/
 lib
+dist
+build
+lerna-debug.log
+yarn-error.log
+*.orig
+
 .eslintrc
 *.orig
 react/yarn.lock
