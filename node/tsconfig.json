@@ -1,10 +1,28 @@
 {
   "extends": "@vtex/tsconfig",
   "compilerOptions": {
-    "types": ["node"],
+    "types": ["node", "jest"],
     "typeRoots": ["node_modules/@types"],
+    "target": "es2017",
     "module": "commonjs",
-    "noEmitOnError": true
+    "moduleResolution": "node",
+    "allowJs": false,
+    "allowSyntheticDefaultImports": false,
+    "noEmitOnError": false,
+    "noImplicitReturns": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "alwaysStrict": true,
+    "skipLibCheck": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "strictPropertyInitialization": true
   },
-  "include": ["./**/*.ts", "./typings/*.d.ts","./graphql/*.d.ts"]
+  "typeAcquisition": {
+    "enable": false
+  },
+  "include": ["global.ts", "./**/*", "./**/*.ts", "./typings/*.d.ts","./graphql/*.d.ts"],
+  "exclude": ["node_modules"]
 }

@@ -1,31 +1,38 @@
-import type { ParamsContext, RecorderState, ServiceContext } from '@vtex/api'
-import { Service } from '@vtex/api'
-
-
+import {
+  Service,
+  ServiceContext,
+  ParamsContext,
+  RecorderState,
+  method,
+} from '@vtex/api'
 import { Clients } from './clients'
+import { getOrderId } from './middlewares/getOrder'
 import { lead } from './resolvers/lead'
 import { leads } from './resolvers/leads'
 import { deleteLead } from './resolvers/deleteLead'
 import { updateLead } from './resolvers/updateLead'
 import { newLead } from './resolvers/newLead'
 
-
-const MEDIUM_TIMEOUT_MS = 2 * 1000
-
 declare global {
-  
-  type Context = ServiceContext<Clients>
+  type Context = ServiceContext<Clients, State>
+
+  interface State extends RecorderState {}
 }
 
-
-export default new Service<Clients, RecorderState, ParamsContext>({
+export default new Service<Clients, State, ParamsContext>({
   clients: {
     implementation: Clients,
     options: {
       default: {
-        timeout: MEDIUM_TIMEOUT_MS,
+        retries: 2,
+        timeout: 10000,
       },
     },
+  },
+  routes: {
+    order_hook: method({
+      POST: [getOrderId],
+    }),
   },
   graphql: {
     resolvers: {
