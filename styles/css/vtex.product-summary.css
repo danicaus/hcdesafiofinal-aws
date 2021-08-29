@@ -29,7 +29,9 @@
   -webkit-line-clamp: 4; 
   -webkit-box-orient: vertical;
 }
-.buyButton--buy-button-search-result :global(.vtex-button) {
+
+.element--container-summary-search-result :global(.vtex-button){
+  align-self: self-end;
   background-color: #ec7211;
   background-image: linear-gradient(180deg, #f67c1b 0, #e15500);
   border: 1px solid;

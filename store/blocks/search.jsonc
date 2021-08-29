@@ -68,7 +68,7 @@
       "product-summary-name#search-result",
       "product-summary-description#search-result",
       "product-summary-price",
-      "product-summary-buy-button#search-result"
+      "add-to-cart-button"
     ]
   },
   "product-summary-image#search-result": {
@@ -86,9 +86,9 @@
       "blockClass": "description-search-result"
     }
   },
-  "product-summary-buy-button#search-result": {
+  "add-to-cart-button": {
     "props": {
-      "blockClass": "buy-button-search-result"
+      "blockClass": "add-to-cart-button-search-result"
     }
   },
   "rich-text#header-result": {

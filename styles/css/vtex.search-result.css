@@ -1,4 +1,9 @@
 /*filter-nav */
+
+.searchResultContainer{
+  padding-top: .2rem;
+}
+
 .filterMessage {
   color: #333;
   font-size: 18px;
@@ -16,7 +21,7 @@
 
 /*order-by*/
 .orderByDropdown {
-  right: 76px;
+  right: 130px;
   width: 260px;
   margin-bottom: 10px;
 }
@@ -31,6 +36,11 @@
 }
 .orderByOptionsContainer {
   top: 55px;
+}
+
+.orderByButton--result-order-by:focus {
+  background: rgb(252, 252, 252);
+  border: none;
 }
 
 /*gallery produtos*/
@@ -54,11 +64,14 @@
 }
 
 .buttonShowMore :global(.vtex-button) {
-  border: 1px #e47911 solid;
+  width: 200px;
+  padding: 10px;
+  background: #2C3A4B;
+  border: 1px #283544 solid;
 }
 .buttonShowMore :global(.vtex-button):hover {
-  border: 1px #d1700f solid;
-  background:#da740f;
+  border: 1px #283544 solid;
+  background:#242e3b;
 } 
 
 /*Style Search Reasult Mobile*/
