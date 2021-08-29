@@ -1,5 +1,8 @@
 {
   "social-media": {
     "component": "SocialMedia"
+  },
+  "leads-form": {
+    "component": "LeadsForm"
   }
 }

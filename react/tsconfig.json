@@ -17,5 +17,5 @@
     "./typings/*.d.ts",
     "./**/*.tsx",
     "./**/*.ts"
-  ]
+, "LeadsForm.jsx"  ]
 }

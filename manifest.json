@@ -53,7 +53,8 @@
     "vtex.checkout-summary": "0.x",
     "vtex.store-link": "0.x",
     "vtex.css-handles": "0.x",
-    "vtex.store-image": "0.x"
+    "vtex.store-image": "0.x",
+    "hiringcoders202123.projeto-final": "0.x"
   },
   "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
 }
