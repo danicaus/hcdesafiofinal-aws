@@ -2,20 +2,20 @@
   "link#linkedin1": {
     "props": {
       "blockClass": ["link-col"],
-      "href": "https://www.linkedin.com/in/adams-gawlinski-florisbal-472731a2/",
+      "href": "https://www.linkedin.com/in/adams-gawlinski-florisbal-472731a2/"
       "label": "Adams Gawlinski Florisbal"
     }
   },
   "link#linkedin2": {
     "props": {
-      "blockClass": ["link-col"],
-      "href": "https://www.linkedin.com/in/cristianocaminha/",
+      "blockClass": ["link-col"]
+      "href": "https://www.linkedin.com/in/cristianocaminha
       "label": "Cristiano Vieira"
     }
   },
   "link#linkedin3": {
     "props": {
-      "blockClass": ["link-col"],
+      "blockClass": ["link-col"]
       "href": "https://www.linkedin.com/in/danielacaus/",
       "target": "_blank",
       "label": "Daniela Caus"
@@ -35,14 +35,6 @@
       "href": "https://br.linkedin.com/in/drielesoriano",
       "target": "_blank",
       "label": "Driele Soriano"
-    }
-  },
-  "link#linkedin6": {
-    "props": {
-      "blockClass": ["link-col"],
-      "href": "/",
-      "target": "_blank",
-      "label": "Gisele R. Mascarenhas"
     }
   },
   "link#linkedin7": {

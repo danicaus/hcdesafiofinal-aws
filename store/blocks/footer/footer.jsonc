@@ -104,7 +104,6 @@
     "props": {
       "text": "Projeto",
       "textColor": "c-on-emphasis",
-      "target": "_blank",
       "font": "t-heading-5"
     }
   },
