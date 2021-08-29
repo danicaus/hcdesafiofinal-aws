@@ -142,13 +142,12 @@
       "link#linkedin1",
       "link#linkedin2",
       "link#linkedin3",
-      "link#linkedin4",
-      "link#linkedin5"
+      "link#linkedin4"
     ]
   },
   "flex-layout.col#group-col-2": {
     "children": [
-      "link#linkedin6",
+      "link#linkedin5",
       "link#linkedin7",
       "link#linkedin8",
       "link#linkedin9",

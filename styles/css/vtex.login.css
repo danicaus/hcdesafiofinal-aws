@@ -1,3 +1,5 @@
+
+
 /*LOGIN BOX*/
 .box{
   right: -85px !important; 
@@ -22,7 +24,6 @@
   transition: all .15s ease-in;
 }
 .contentForm {
-  /* border: 1px solid yellow; */
   width: 340px;
 }
 .inputContainer :global(.vtex-input-prefix__group) {
@@ -65,4 +66,10 @@
 .sendButton :global(.vtex-button):hover{
   background: #db750f;
   transition: color .15s ease-in;
+}
+
+@media screen and (max-width: 499px) {
+  .accessCodeOptionBtn {
+    width: 320px;
+  }
 }
