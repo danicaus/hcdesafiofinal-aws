@@ -1,0 +1,80 @@
+{
+  "link#linkedin1": {
+    "props": {
+      "blockClass": ["link-col"],
+      "href": "https://www.linkedin.com/in/adams-gawlinski-florisbal-472731a2/",
+      "label": "Adams Gawlinski Florisbal"
+    }
+  },
+  "link#linkedin2": {
+    "props": {
+      "blockClass": ["link-col"],
+      "href": "https://www.linkedin.com/in/cristianocaminha/",
+      "label": "Cristiano Vieira"
+    }
+  },
+  "link#linkedin3": {
+    "props": {
+      "blockClass": ["link-col"],
+      "href": "https://www.linkedin.com/in/danielacaus/",
+      "target": "_blank",
+      "label": "Daniela Caus"
+    }
+  },
+  "link#linkedin4": {
+    "props": {
+      "blockClass": ["link-col"],
+      "href": "https://www.linkedin.com/in/danilomdsdev/",
+      "target": "_blank",
+      "label": "Danilo Mendes"
+    }
+  },
+  "link#linkedin5": {
+    "props": {
+      "blockClass": ["link-col"],
+      "href": "https://br.linkedin.com/in/drielesoriano",
+      "target": "_blank",
+      "label": "Driele Soriano"
+    }
+  },
+  "link#linkedin6": {
+    "props": {
+      "blockClass": ["link-col"],
+      "href": "/",
+      "target": "_blank",
+      "label": "Gisele R. Mascarenhas"
+    }
+  },
+  "link#linkedin7": {
+    "props": {
+      "blockClass": ["link-col"],
+      "href": "https://www.linkedin.com/in/ivancmc",
+      "target": "_blank",
+      "label": "Ivan Cardoso"
+    }
+  },
+  "link#linkedin8": {
+    "props": {
+      "blockClass": ["link-col"],
+      "href": "https://www.linkedin.com/in/leomssilva",
+      "target": "_blank",
+      "label": "Leonardo M. S. da Silva"
+    }
+  },
+  "link#linkedin9": {
+    "props": {
+      "blockClass": ["link-col"],
+      "href": "https://www.linkedin.com/in/natansouzaa/",
+      "target": "_blank",
+      "label": "Natan Souza"
+    }
+  },
+  "link#linkedin10": {
+    "props": {
+      "blockClass": ["link-col"],
+      "href": "https://www.linkedin.com/in/paulo-eduardo-de-souza/",
+      "target": "_blank",
+      "label": "Paulo Eduardo"
+    }
+  }
+}

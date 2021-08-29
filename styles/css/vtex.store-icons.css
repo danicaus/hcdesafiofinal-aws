@@ -1,0 +1,11 @@
+.cartIcon--cartWhite {
+  color: #ffffff;
+}
+
+:global(.vtex-button):hover .cartIcon--cartWhite {
+  color: #f8991d;
+}
+
+:global(.vtex-button):hover {
+  background-color: transparent;
+}

@@ -1,20 +1,43 @@
 {
-  "store.home": { 
+  "store.home": {
     "blocks": [
-      "rich-text",
-      "search-result-layout.customQuery#categoria"
+      "store.slider",
+      "search-result-layout.customQuery#categoria",
+      "flex-layout.row#leads-form"
     ]
   },
-  "rich-text": { 
-    "props": { 
-      "text": "Projeto Final",
-      "textAlignment": "CENTER",
-      "textPosition": "CENTER",
-      "font": "t-heading-1"
+  "flex-layout.row#leads-form": {
+    "children": [
+      "flex-layout.col#form-description",
+      "flex-layout.col#leads-form"
+    ]
+  },
+  "flex-layout.col#form-description": {
+    "props": {
+      "border": "right",
+      "horizontalAlign": "center"
+    },
+    "children": [
+      "rich-text#form-title",
+      "rich-text#form-subtitle",
+      "image#form"
+    ]
+  },
+  "rich-text#form-title": {
+    "props": {
+      "text": "### Cadastre-se para ganhar descontos exclusivos!"
     }
   },
-  "list-context.product-list": {
-    "blocks": ["product-summary.shelf#home"]
+  "rich-text#form-subtitle": {
+    "props": {
+      "font": "t-body",
+      "text": "Além de receber sobre novidades e serviços em primeira mão"
+    }
+  },
+  "image#form": {
+    "props": {
+      "src": "assets/form/credential-light.png"
+    }
   },
   "product-summary.shelf#home": {
     "children": [
@@ -95,5 +118,9 @@
         "mode1": "small"
       }
     }
+  "flex-layout.col#leads-form": {
+    "children": [
+      "leads-form"
+    ]
   }
 }
