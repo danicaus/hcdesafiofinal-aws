@@ -135,10 +135,10 @@
   "flex-layout.col#group-col-1": {
     "children": [
       "link#linkedin1",
+      "link#linkedin2",
       "link#linkedin3",
-      "link#linkedin5",
-      "link#linkedin7",
-      "link#linkedin9"
+      "link#linkedin4",
+      "link#linkedin5"
     ]
   },
   "flex-layout.col#group-col-2": {
@@ -146,11 +146,10 @@
       "marginLeft": 7
     },
     "children": [
-      "link#linkedin2",
-      "link#linkedin4",
       "link#linkedin6",
+      "link#linkedin7",
       "link#linkedin8",
-      "link#linkedin10"
+      "link#linkedin9"
     ]
   },
 
@@ -236,8 +235,7 @@
       "link#linkedin6",
       "link#linkedin7",
       "link#linkedin8",
-      "link#linkedin9",
-      "link#linkedin10"
+      "link#linkedin9"
     ]
   },
   "flex-layout.row#copyright-mobile": {

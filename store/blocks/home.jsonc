@@ -1,7 +1,7 @@
 {
   "store.home": {
     "blocks": [
-      "store.slider",
+      "slider-layout#demo-images",
       "search-result-layout.customQuery#categoria",
       "flex-layout.row#leads-form"
     ]
@@ -77,10 +77,10 @@
   },
   "flex-layout.row#results": { 
     "children": [ 
-      "flex-layout.col#search"
+      "flex-layout.col#search-home"
     ]
   },
-  "flex-layout.col#search": { 
+  "flex-layout.col#search-home": { 
     "children": [
       "search-content"
     ]
@@ -118,6 +118,7 @@
         "mode1": "small"
       }
     }
+  },
   "flex-layout.col#leads-form": {
     "children": [
       "leads-form"

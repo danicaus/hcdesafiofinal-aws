@@ -92,7 +92,7 @@
     },
     "children": [
       "flex-layout.col#menu-header",
-      "flex-layout.col#search",
+      "flex-layout.col#search-header",
       "flex-layout.col#cart"
     ]
   },
@@ -135,7 +135,7 @@
       }
     }
   },
-  "flex-layout.col#search": {
+  "flex-layout.col#search-header": {
     "props": {
       "blockClass": "header",
       "verticalAlign": "center"
