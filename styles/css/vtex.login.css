@@ -1,45 +1,68 @@
-.container :global(.vtex-button) {
-  background-color: #ec7211;
-  background-image: linear-gradient(180deg,#f67c1b 0,#e15500);
-  border-width: 1px;
-  border-style: solid;
-  border-radius: 3px;
-  border-color: #e76d0c #e15500 #e15500;
-  box-shadow: inset 0 1px 0 hsla(0,0%,100%,.2);
-  padding: 4px 18px;
-  min-height: 30px;
-  margin-left: 13px;
+/*LOGIN BOX*/
+.box{
+  right: -85px !important; 
 }
-
-.container :global(.vtex-button):hover {
-  background-color: #eb5f07;
-  background-image: linear-gradient(180deg,#e76d0c 0,#d74b00);
+.accessCodeOptionBtn :global(.vtex-button) {
+  padding: 3px 30px;
 }
-
-.label{
-  display: block;
-  color: #fff;
-  text-shadow: rgba(0,0,0,.05) 0 1px 0;
-  font-weight: 500;
-  padding: 0;
+.accessCodeOptionBtn :global(.vtex-button), 
+.emailPasswordOptionBtn :global(.vtex-button) {
+  background: #fff;
+  border: 1px solid rgb(204, 204, 204);
+  border-radius: 4px;
+  color: #444;
+  font-size: 1.025rem;
   text-transform: none;
-  font-size: 14px;
+  font-weight: 300;
 }
-
-.container :global(.vtex-button__label.ph6), 
-.buttonLink :global(.vtex-button__label.ph4) {
-  padding: 0 !important;
+.accessCodeOptionBtn :global(.vtex-button):hover, 
+.emailPasswordOptionBtn :global(.vtex-button):hover {
+  background: #f0f9ff;
+  border: 1px solid rgb(51, 136, 221);
+  transition: all .15s ease-in;
 }
-
-:global(.vtex-store-drawer-0-x-childrenContainer--burguer-menu) .buttonLink :global(.vtex-button__label) {
-  justify-content: left;
-  margin-left: .25rem;
+.contentForm {
+  /* border: 1px solid yellow; */
+  width: 340px;
 }
-
-:global(.vtex-store-drawer-0-x-childrenContainer--burguer-menu) .label {
-  color: #f8991d;
+.inputContainer :global(.vtex-input-prefix__group) {
+  border: 1px solid rgb(204, 204, 204);
+  color: #333;
 }
-
-:global(.vtex-store-drawer-0-x-childrenContainer--burguer-menu) .container :global(.relative) {
-  width: 100%;
+.inputContainer :global(.vtex-styleguide-9-x-input) {
+  color: #333;
+}
+.backButton :global(.vtex-button),
+.forgotPasswordLink{
+  color: #16b;
+}
+.forgotPasswordLink:hover{
+  color: #16b;
+  opacity: .8;
+  transition: color .15s ease-in;
+}
+.dontHaveAccount {
+  width:100%;
+  color: #111;
+  background: #e7e9ec;
+  border-radius: 4px;
+  text-decoration: none!important;
+  vertical-align: middle;
+  text-align: center;
+  padding: 10px 30px;
+  margin-top: 8px;
+}
+.dontHaveAccount:hover {
+  color: #111;
+  opacity: .8;
+  transition: color .15s ease-in;
+}
+.sendButton :global(.vtex-button){
+  background: #e47911;
+  border: 1px solid #e47911;
+  width: 150px;
+}
+.sendButton :global(.vtex-button):hover{
+  background: #db750f;
+  transition: color .15s ease-in;
 }
