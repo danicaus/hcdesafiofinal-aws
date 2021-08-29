@@ -37,3 +37,10 @@ build
 lerna-debug.log
 yarn-error.log
 *.orig
+
+#Not BackEnd
+assets
+messages
+docs
+store
+styles

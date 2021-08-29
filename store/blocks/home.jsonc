@@ -1,7 +1,8 @@
 {
   "store.home": { 
     "blocks": [
-      "rich-text"
+      "rich-text",
+      "search-result-layout.customQuery#categoria"
     ]
   },
   "rich-text": { 
@@ -10,6 +11,89 @@
       "textAlignment": "CENTER",
       "textPosition": "CENTER",
       "font": "t-heading-1"
+    }
+  },
+  "list-context.product-list": {
+    "blocks": ["product-summary.shelf#home"]
+  },
+  "product-summary.shelf#home": {
+    "children": [
+      "product-summary-name",
+      "product-summary-image",
+      "product-price",
+      "buy-button"
+    ]
+  },
+  "search-result-layout.customQuery#categoria": {
+    "props": {
+      "querySchema": {
+        "orderByField": "OrderByReleaseDateDESC",
+        "hideUnavailableItems": true,
+        "maxItemsPerPage": 8,
+        "queryField": "AWS",
+        "mapField": "c"
+      }
+    },
+    "blocks": [
+      "search-result-layout.desktop",
+      "search-result-layout.mobile",
+      "search-not-found-layout"
+    ]
+  },
+
+  "search-result-layout.desktop": {
+    "children": [
+      "flex-layout.row#results",
+      "search-fetch-more"
+    ],
+    "props": {
+      "pagination": "show-more",
+      "preventRouteChange": true,
+      "defaultGalleryLayout": "duasColunas"
+    }
+  },
+  "flex-layout.row#results": { 
+    "children": [ 
+      "flex-layout.col#search"
+    ]
+  },
+  "flex-layout.col#search": { 
+    "children": [
+      "search-content"
+    ]
+  },
+  "search-content": { 
+    "blocks": ["gallery", "not-found"]
+  },
+  "gallery": {
+    "props": {
+      "layouts": [
+        {
+          "name": "umaColuna",
+          "component": "Produto",
+          "itemsPerRow": 1
+        },
+        {
+          "name": "duasColunas",
+          "component": "Produto",
+          "itemsPerRow": 4
+        }
+      ],
+      "Produto": "product-summary.shelf#home"
+    }
+  },
+  "search-result-layout.mobile": {
+    "children": [
+      "flex-layout.row#results",
+      "search-fetch-more"
+    ],
+    "props": {
+      "pagination": "show-more",
+      "preventRouteChange": true,
+      "defaultGalleryLayout": "umaColuna",
+      "mobileLayout":{
+        "mode1": "small"
+      }
     }
   }
 }
