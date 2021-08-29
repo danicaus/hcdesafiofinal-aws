@@ -1,3 +1,7 @@
+.container{
+  padding: 0;
+}
+
 .logoContainer {
   padding-left: 10px;
   padding-right: 10px;
@@ -46,24 +50,23 @@
 }
 
 .infoCardContainer{
-  /* background-color: #233040; */
   width: 100%;
   height: 500px;
   padding: 2rem;
 }
 
 .infoCardHeadline {
-  color: white;
+  color: #ffffff;
 }
 
 .infoCardSubhead {
-  color: white;
+  color: #ffffff;
 }
 
 .infoCardCallActionContainer :global(.vtex-button) {
   margin-top: 1.5rem;
   width: 420px;
-  color: white;
+  color: #ffffff;
   text-transform: none;
   font-size: 1rem;
   background: rgb(246,124,27);
@@ -76,7 +79,7 @@
   border: transparent;
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   .infoCardContainer{
       height: 100vh;
       padding: 1rem;

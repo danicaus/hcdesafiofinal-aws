@@ -1,6 +1,6 @@
 .paginationDot {
     margin-bottom: 1.5rem;
-    background-color: rgb(184, 184, 184);
+    background-color: #b8b8b8;
 }
 
 .paginationDot--isActive {
@@ -8,12 +8,12 @@
 }
 
 .caretIcon {
-    color: white;
+    color: #ffffff;
     opacity: .2;
 }
 
 .caretIcon:hover {
-    color: white;
+    color: #ffffff;
     opacity: 1;
 }
 

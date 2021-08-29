@@ -8,14 +8,15 @@ const CSS_HANDLES = ["container", "link", "icon"];
 
 const SocialMedia: StorefrontFunctionComponent<SocialMediaProps> = ({}) => {
   const iconStyle: CSS.Properties = {
-    fill: "#fff",
+    fill: "#ffffff",
     width: "25px",
+    height: "25px",
   };
 
   const handles = useCssHandles(CSS_HANDLES);
 
   return (
-    <div className={`${handles.container} tc`}>
+    <div className={`${handles.container}`}>
       <a
         className={`${handles.link}`}
         href="https://twitter.com/awscloud"

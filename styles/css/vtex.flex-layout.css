@@ -1,14 +1,13 @@
-
 /*Flex Layout Header*/
 .flexRowContent.flexRowContent--header {
-  background-color: #232F3E;
+  background-color: #232f3e;
   padding-left: 30px;
   padding-right: 40px;
   justify-content: space-between;
 }
 
 .flexRowContent.flexRowContent--header-mobile {
-  background-color: #232F3E;
+  background-color: #232f3e;
   padding-left: 18px;
   padding-right: 18px;
   justify-content: space-between;
@@ -37,29 +36,26 @@
 
 /*Flex Layout Footer*/
 .flexRowContent--footer-content {
-  max-width: 100%;
+  max-width: 100vw;
 }
 .flexCol--footer-content-col1 {
-  max-width:240px;
+  max-width:70%;
 }
 .flexCol--footer-content-col1-desktop {
   max-width:300px;
 }
 .flexCol--footer-content-col2{
-  max-width:320px;
+  max-width:70%;
 }
 
 .flexRowContent--footer-copyright {
-  background: #EAEDED;
-  width: 100%;
+  background: #eaeded;
 }
 
 .flexRowContent--row-social-media {
-  width: 200px;
+  margin-top: 10px;
 }
 
 .flexCol--content-col1-mobile  {
   max-width: 450px;
 }
-
-

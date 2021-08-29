@@ -1,11 +1,11 @@
 /*Rich Text Search Result*/
 .container--header-result {
   background-image: url(https://d1.awsstatic.com/Products/product-name/Default_Hero_Background_1.0b7a4e5995bc980bbb17ed8bbe9e57bf4b72f9a3.png);
-  color: #fff;
+  color: #ffffff;
   padding: 30px;
 }
 .headingLevel2--header-result-title {
-  color: #fff;
+  color: #ffffff;
 }
 .heading--header-result-title {
   color: #232f3e;
@@ -15,7 +15,7 @@
   margin-bottom: 15px;
 }
 .paragraph--header-result-paragraph {
-  color: #333;
+  color: #333333;
   font-size: 16px;
   font-weight: 200;
   margin-top: 0;
@@ -24,7 +24,7 @@
 /*Rich text not-found page*/
 .heading--title-not-found {
   margin-bottom: 0px;
-  color: #333;
+  color: #333333;
 }
 .container--title-not-found {
   margin-bottom: 30px;
@@ -39,10 +39,10 @@
   font-size: 18px;
   line-height: 30px;
 }
-@media screen and (max-width: 499px) {
+@media (max-width: 499px) {
   .container--title-not-found {
     padding: 10px;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid #cccccc;
   }
 }
 
@@ -54,7 +54,7 @@
   margin-bottom: 0.9375rem;
 }
 .paragraph--paragraph-about {
-  color: #333;
+  color: #333333;
   font-size: 1.12rem;
   font-weight: 200;
   line-height: 1.792rem;
@@ -66,7 +66,7 @@
   font-weight: 400;
 }
 .paragraph--text-box {
-  color: #333;
+  color: #333333;
   font-size: 0.875rem;
   line-height: 1.4rem;
   margin-bottom: 0.7rem;
@@ -84,18 +84,18 @@
 
 /*Rich Text Footer*/
 .paragraph--amazon-text {
-  color: #fff;
-  max-width: 340px;
+  color: #ffffff;
+  width: 400px;
 }
 .container--title-group {
   margin-top: 0;
 }
 .paragraph--text-copyright {
-  color: #000;
+  color: #000000;
   font-size: 14px;
 }
 .link--text-copyright {
-  color: #000;
+  color: #000000;
   text-decoration: none;
   font-weight: 500;
 }
