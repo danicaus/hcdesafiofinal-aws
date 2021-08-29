@@ -1,0 +1,24 @@
+.paginationDot {
+    margin-bottom: 1.5rem;
+    background-color: rgb(184, 184, 184);
+}
+
+.paginationDot--isActive {
+    background-color: #FF5500;
+}
+
+.caretIcon {
+    color: white;
+    opacity: .2;
+}
+
+.caretIcon:hover {
+    color: white;
+    opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+    .caretIcon {
+        display: none;
+    }
+}

@@ -1,3 +1,25 @@
+
+/*Flex Layout Header*/
+.flexRowContent.flexRowContent--header {
+  background-color: #232F3E;
+  padding-left: 30px;
+  padding-right: 40px;
+  justify-content: space-between;
+}
+
+.flexRowContent.flexRowContent--header-mobile {
+  background-color: #232F3E;
+  padding-left: 18px;
+  padding-right: 18px;
+  justify-content: space-between;
+}
+
+.flexCol.flexCol--header,
+.flexCol.flexCol--header-mobile {
+  flex-direction: row;
+  align-items: center;
+}
+
 /*Flex Layout Search Result*/
 .flexRow--container-desktop {
   margin: 20px auto 40px;
@@ -26,13 +48,18 @@
 .flexCol--footer-content-col2{
   max-width:320px;
 }
+
 .flexRowContent--footer-copyright {
   background: #EAEDED;
   width: 100%;
 }
+
 .flexRowContent--row-social-media {
   width: 200px;
 }
+
 .flexCol--content-col1-mobile  {
   max-width: 450px;
 }
+
+
