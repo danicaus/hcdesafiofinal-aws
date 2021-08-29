@@ -30,6 +30,10 @@
   -webkit-box-orient: vertical;
 }
 
+.element--container-summary-search-result {
+  justify-content: space-between;
+}
+
 .element--container-summary-search-result :global(.vtex-button){
   align-self: self-end;
   background-color: #ec7211;
