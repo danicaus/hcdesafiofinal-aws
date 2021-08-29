@@ -1,4 +1,3 @@
-
 import {
   Service,
   ServiceContext,
@@ -8,6 +7,11 @@ import {
 } from '@vtex/api'
 import { Clients } from './clients'
 import { getOrderId } from './middlewares/getOrder'
+import { lead } from './resolvers/lead'
+import { leads } from './resolvers/leads'
+import { deleteLead } from './resolvers/deleteLead'
+import { updateLead } from './resolvers/updateLead'
+import { newLead } from './resolvers/newLead'
 
 declare global {
   type Context = ServiceContext<Clients, State>
@@ -29,5 +33,18 @@ export default new Service<Clients, State, ParamsContext>({
     order_hook: method({
       POST: [getOrderId],
     }),
+  },
+  graphql: {
+    resolvers: {
+      Mutation: {
+        deleteLead,
+        updateLead,
+        newLead,
+      },
+      Query: {
+        lead,
+        leads,
+      },
+    },
   },
 })
