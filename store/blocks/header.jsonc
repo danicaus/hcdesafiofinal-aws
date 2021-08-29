@@ -216,6 +216,7 @@
   "vtex.menu@2.x:menu#mobile": {
     "props": {
       "orientation": "vertical",
+      "accountOptionsButtonBehavior": "link",
       "blockClass": "burguer-menu"
     },
     "children": [
