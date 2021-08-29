@@ -20,3 +20,12 @@
 .link--text-copyright:hover {
   color: #e47911;
 }
+.container--title-product {
+  color: #333333;
+  font-size: 2rem;
+}
+.wrapper--title-product {
+  margin: 0 auto;
+}
+
+

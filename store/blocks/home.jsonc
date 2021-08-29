@@ -1,7 +1,9 @@
 {
   "store.home": { 
     "blocks": [
-      "slider-layout#demo-images"
+      "slider-layout#demo-images",
+      "flex-layout.row#title-product",
+      "flex-layout.row#products"
     ]
   },
 
@@ -117,5 +119,48 @@
         "callToActionUrl": "/aws/amazon-s3",
         "textAlignment": "center"
       }
+    },
+
+    /* INÍCIO da Seção de Produtos */
+  "flex-layout.row#title-product": {
+    "children": ["rich-text#title-product"]
+  },
+
+  /* Título CONHEÇA NOSSOS PRODUTOS */
+  "rich-text#title-product": {
+    "props": {
+      "text": "Conheça nossos produtos",
+      "blockClass": "title-product"
     }
+  },
+
+  "flex-layout.row#products": {
+    "children": ["list-context.product-list#products"],
+    "props": {
+      "blockClass": "products"
+    }
+  },
+
+  "list-context.product-list#products": {
+    "blocks": ["product-summary.shelf#home"],
+    "children": ["slider-layout#products"],
+    "props": {
+      "orderBy": "OrderByNameDESC"
+    }
+  },
+  "slider-layout#products": {
+    "props": {
+      "arrowSize": 30,
+      "showNavigationArrows": "desktopOnly",
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 2,
+        "phone": 1
+      },
+      "infinite": true,
+      "fullWidth": false,
+      "blockClass": "slider-products"
+    }
+  }
+  /* FIM da Seção de Produtos */
 }

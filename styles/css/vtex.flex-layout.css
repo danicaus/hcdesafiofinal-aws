@@ -46,3 +46,10 @@
 .flexCol--content-col1-mobile  {
   max-width: 450px;
 }
+
+.flexRowContent--price {
+  justify-content: center;
+  color: #333333;
+  font-size: 30px;
+  font-weight: 600;
+}

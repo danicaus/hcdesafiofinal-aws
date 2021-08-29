@@ -1,0 +1,32 @@
+.element {
+  justify-content: center;
+  text-align: center;
+}
+.element :global(.vtex-button) {
+   background-color: #ec7211;
+  background-image: linear-gradient(180deg,#f67c1b 0,#e15500);
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 3px;
+  border-color: #e76d0c #e15500 #e15500;
+  box-shadow: inset 0 1px 0 hsla(0,0%,100%,.2);
+  padding: 4px 18px;
+  min-height: 30px;
+  
+}
+.element :global(.vtex-button):hover {
+  background-color: #eb5f07;
+  background-image: linear-gradient(180deg,#e76d0c 0,#d74b00);
+}
+.nameContainer {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.brandName {
+  font-weight: 600;
+  font-size: 18px;
+  color: #007DBC;
+}
+
+
+
