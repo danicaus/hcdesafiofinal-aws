@@ -22,7 +22,7 @@
 
 /*Flex Layout Search Result*/
 .flexRow--container-desktop {
-  margin: 20px auto 40px;
+  margin: 20px 100px;
   max-width: 1280px; 
 }
 .flexRow--container-mobile{
