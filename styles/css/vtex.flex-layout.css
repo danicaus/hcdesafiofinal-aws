@@ -59,3 +59,24 @@
 .flexCol--content-col1-mobile  {
   max-width: 450px;
 }
+
+/*Flex Layout Formulário de Leads*/
+.flexRowContent--leads-form-section {
+  padding: 50px 20px 20px;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.flexCol--leads-form-description {
+  border-right: 1px solid #D5DBDB;
+  padding-right: 30px;
+  margin-right: 30px;
+}
+
+@media screen and (max-width: 720px) {
+  .flexCol--leads-form-description {
+    border-right: 0;
+    padding-right: 0;
+    margin-right: 0;
+  }
+}
