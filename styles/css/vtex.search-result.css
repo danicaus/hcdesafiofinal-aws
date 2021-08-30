@@ -16,7 +16,7 @@
 
 /*order-by*/
 .orderByDropdown {
-  right: 76px;
+  right: 120px;
   width: 260px;
   margin-bottom: 10px;
 }
@@ -33,11 +33,16 @@
   top: 55px;
 }
 
+.orderByButton--result-order-by:focus {
+  background: rgb(252, 252, 252);
+  border: none;
+}
+
 /*gallery produtos*/
 .galleryItem--gallery-search-result {
-  margin: 10px 50px 20px 10px;
+  margin: 10px 30px 20px 10px;
   width: 300px;
-  height: 400px;
+  height: 410px;
   background: #fff;
   border-top: rgb(35, 47, 62) solid 5px;
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3), 0 0 0 1px rgba(0, 0, 0, 0.04);
@@ -54,13 +59,14 @@
 }
 
 .buttonShowMore :global(.vtex-button) {
+  width: 200px;
+  padding: 10px;
   border: 1px #e47911 solid;
   color: #FFFFFF;
 }
 .buttonShowMore :global(.vtex-button):hover {
   border: 1px #d1700f solid;
   background:#da740f;
-  color: #FFFFFF;
 } 
 
 /*Style Search Reasult Mobile*/
