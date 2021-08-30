@@ -33,7 +33,7 @@
       "headline": "AWS Lambda",
       "subhead": "Execute código sem se preocupar com servidores ou clusters. Pague somente pelo que usar.",
       "callToActionMode": "button",
-      "callToActionText": "Começar a usar o AWS Lambda",
+      "callToActionText": "Saiba mais sobre o Lambda",
       "callToActionUrl": "/aws-lambda/p",
       "textAlignment": "center"
     }
@@ -48,8 +48,8 @@
       "headline": "Amazon DynamoDB",
       "subhead": "Serviço de banco de dados NoSQL rápido e flexível para qualquer escala.",
       "callToActionMode": "button",
-      "callToActionText": "Crie uma conta da AWS",
-      "callToActionUrl": "/amazon-dynamo-db/p",
+      "callToActionText": "Mais informações sobre o Dynamo DB",
+      "callToActionUrl": "/amazon-dynamodb/p",
       "textAlignment": "center"
     }
   },
@@ -93,7 +93,7 @@
       "headline": "Amazon Virtual Private Cloud",
       "subhead": "Crie em uma rede virtual isolada logicamente na Nuvem AWS.",
       "callToActionMode": "button",
-      "callToActionText": "Crie uma conta da AWS",
+      "callToActionText": "Obtenha o Amazon VPC",
       "callToActionUrl": "/amazon-vpc/p",
       "textAlignment": "center"
     }
@@ -108,7 +108,7 @@
       "headline": "Amazon S3 Glacier e<br/>S3 Glacier Deep Archive",
       "subhead": "Classes de armazenamento de objetos de longo prazo, seguras e resilientes do Amazon S3 a partir de 1 USD por terabyte por mês.",
       "callToActionMode": "button",
-      "callToActionText": "Comece a usar o Amazon S3",
+      "callToActionText": "Mais sobre o Amazon S3",
       "callToActionUrl": "/amazon-s3/p",
       "textAlignment": "center"
     }
