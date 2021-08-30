@@ -85,7 +85,8 @@
 /*Rich Text Footer*/
 .paragraph--amazon-text {
   color: #ffffff;
-  width: 400px;
+  font-size: 14px;
+  max-width: 300px;
 }
 .container--title-group {
   margin-top: 0;
@@ -127,6 +128,7 @@
 .link--category-card:visited,
 .link--all-products:visited {
   color: #007eb9;
+  text-decoration: none;
 }
 .container--all-products{
   border-top: none;
@@ -134,13 +136,15 @@
   box-shadow:none;
   padding-right: 0;
 }
-.link--category-card,
 .link--all-products {
-  text-decoration: none;
+  font-size: 1.2rem;
 }
-.link--category-card:hover,
-.link--all-products:hover {
-  color: #eb5f07;
+.link--all-products:hover,
+.link--category-card:hover {
+  color: #e47911;
+}
+.strong--category-card {
+  font-weight: 700;
 }
 .container--all-products {
   margin-right: 10px;
