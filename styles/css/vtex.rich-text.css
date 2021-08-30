@@ -131,15 +131,15 @@
   padding-right: 0;
   color: #007eb9;
 }
-.link {
+.link--all-products {
   color: #007eb9;
   text-decoration: none;
   font-size: 1.2rem;
 }
-.link:hover {
+.link--all-products:hover {
   color: #e47911;
 }
-.link:visited {
+.link--all-products:visited {
   color: #007eb9;
 }
 .strong--category-card {
