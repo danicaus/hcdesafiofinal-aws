@@ -14,12 +14,16 @@ input LeadInput {
 }
 
 type Query {
-  lead(email: String!): Lead
-  leads: [Lead]
+  getLead(email: String!): Lead
+  getLeads: [Lead]
+}
+
+type newLeadRes{
+  message: String
 }
 
 type Mutation {
-  newLead(Lead: LeadInput): String
+  newLead(formData: LeadInput): newLeadRes
   updateLead(email: String!): String
   deleteLead(email: String!): String
 }

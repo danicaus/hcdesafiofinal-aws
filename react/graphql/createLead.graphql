@@ -1,7 +1,5 @@
-mutation createLead($formData: LeadInput){
+mutation createLead($formData: LeadInput!){
   newLead(formData: $formData){
-    name,
-    email,
-    phone
+    message
   }
 }

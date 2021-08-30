@@ -1,5 +1,10 @@
-query getLead($email: String){
-  lead(email: $email){
+query getLead($email: String!){
+  getLead(email: $email){
     name
+    email
+    phone
+    situation
+    prospectDate
+    clientDate
   }
 }

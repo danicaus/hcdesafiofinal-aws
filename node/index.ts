@@ -8,8 +8,8 @@ import {
 } from '@vtex/api'
 import { Clients } from './clients'
 import { getOrderId } from './middlewares/getOrder'
-import { lead } from './resolvers/lead'
-import { leads } from './resolvers/leads'
+import { getLead } from './resolvers/getLead'
+import { getLeads } from './resolvers/getLeads'
 import { newLead } from './resolvers/newLead'
 import { updateLead } from './resolvers/updateLead'
 import { deleteLead } from './resolvers/deleteLead'
@@ -36,8 +36,8 @@ export default new Service({
   graphql: {
     resolvers: {
       Query: {
-        lead,
-        leads
+        getLead,
+        getLeads
       },
       Mutation: {
         newLead,

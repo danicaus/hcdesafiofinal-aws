@@ -15,14 +15,14 @@ export class LeadAPI extends ExternalClient {
         })
   }
   
-  public lead = async (email: string) => {
+  public getLead = async (email: string) => {
     const response =  await this.http.get(`/${email}`, {
       metric: 'lead-get'
     })
     return response.Item
    }
 
-  public leads = async () => {
+  public getLeads = async () => {
     const response = await this.http.get("", {
       metric: 'leads-get'
     })
@@ -30,9 +30,10 @@ export class LeadAPI extends ExternalClient {
   }
 
   public deleteLead = async (email: string) => {
-    return await this.http.delete(`/${email}`, {
+    const response = await this.http.delete(`/${email}`, {
       metric: 'lead-delete'
     })
+    return response?.data
   }
 
   public updateLead = async (email: string) => {
@@ -41,9 +42,10 @@ export class LeadAPI extends ExternalClient {
     })
   }
 
-  public newLead = async (lead: LeadInput) => {
-    return await this.http.put("",lead,{
+  public newLead = async (formData: LeadInput) => {
+    const message = await this.http.put("",formData,{
      metric: 'lead-create'
     })
+    return { message }
   }
 }

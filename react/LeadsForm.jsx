@@ -1,8 +1,9 @@
 import React from 'react'
 import { useCssHandles } from 'vtex.css-handles'
 import { useState } from 'react';
-import getLead from './graphql/getLead.graphql'
-import createLead from './graphql/createLead.graphql'
+import { useMutation } from 'react-apollo';
+// import VerifyLead from './VerifyLead'
+// import createLead from './graphql/createLead.graphql'
 
 const CSS_HANDLES = ['LeadsFormContainer', 'LeadsFormInputContainer', 'LeadsFormLabel', 'LeadsFormInput', 'LeadsFormButton']
 
@@ -12,6 +13,7 @@ const LeadsForm = () => {
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
   const [phone, setPhone] = useState('')
+  // const [createLead] = useMutation(createLead)
   
   async function handleForm(e) {
     e.preventDefault()
@@ -25,12 +27,14 @@ const LeadsForm = () => {
     }
     
     console.log(formData.body);
-    const isLead = await getLead(formData.body.email)
-    console.log('LEAD', isLead)
-    if (!isLead) {
-      console.log('IS NOT LEAD YET')
-      createLead(formData.body)
-    }
+
+    // const isLead = VerifyLead(formData.body.email)
+    
+    // console.log('LEAD', isLead)
+    
+    // if (!isLead) {
+    //   console.log('IS NOT LEAD YET')
+    // }
 
   }
 
