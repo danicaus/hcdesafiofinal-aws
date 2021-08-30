@@ -1,3 +1,4 @@
+/*Slider topo da Home*/
 .paginationDot {
     margin-bottom: 1.5rem;
     background-color: #b8b8b8;
@@ -7,12 +8,12 @@
     background-color: #FF5500;
 }
 
-.caretIcon {
+.caretIcon--demo-images {
     color: #ffffff;
     opacity: .2;
 }
 
-.caretIcon:hover {
+.caretIcon--demo-images:hover {
     color: #ffffff;
     opacity: 1;
 }
@@ -21,4 +22,35 @@
     .caretIcon {
         display: none;
     }
+
+    .sliderLayoutContainer--slider-products {
+      padding: 30px !important;
+      }
+}
+
+/*Slider de produtos da Home*/
+.caretIcon--slider-products {
+  color: #232f3e;
+  opacity: .5;
+}
+
+
+.caretIcon--slider-products:hover {
+  color: #232f3e;
+  opacity: 1;
+}
+
+
+.slide--slider-products {
+  margin-bottom: 50px;
+}
+
+.slideChildrenContainer--slider-products {
+    margin: 0 10px;
+    border-top: 5px solid #232f3e;
+    background-color: #ffffff;
+    box-shadow: 0px 3px 4px 0px rgba(0,0,0,0.29);
+    -webkit-box-shadow: 0px 3px 4px 0px rgba(0,0,0,0.29);
+    -moz-box-shadow: 0px 3px 4px 0px rgba(0,0,0,0.29);
+    padding: 0 10px;
 }

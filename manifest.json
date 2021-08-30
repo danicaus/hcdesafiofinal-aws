@@ -73,6 +73,7 @@
     "vtex.product-identifier": "0.x",
     "vtex.product-kit": "1.x",
     "vtex.product-list": "0.x",
+    "vtex.product-price": "1.x",
     "vtex.product-quantity": "1.x",
     "vtex.product-review-interfaces": "1.x",
     "vtex.product-specification-badges": "0.x",
