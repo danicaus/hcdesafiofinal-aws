@@ -1,6 +1,7 @@
 {
   "flex-layout.row#leads-form": {
     "props": {
+      "id": "leads-form", 
       "horizontalAlign": "center",
       "blockClass": "leads-form-section"
     },
