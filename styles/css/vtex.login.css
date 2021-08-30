@@ -1,3 +1,4 @@
+/*Botão de Fazer Login*/
 .container :global(.vtex-button) {
   background-color: #ec7211;
   background-image: linear-gradient(180deg,#f67c1b 0,#e15500);
@@ -42,4 +43,78 @@
 
 :global(.vtex-store-drawer-0-x-childrenContainer--burguer-menu) .container :global(.relative) {
   width: 100%;
+}
+
+/*LOGIN BOX*/
+.box{
+  right: -85px !important; 
+}
+.accessCodeOptionBtn :global(.vtex-button) {
+  padding: 3px 30px;
+}
+.accessCodeOptionBtn :global(.vtex-button), 
+.emailPasswordOptionBtn :global(.vtex-button) {
+  background: #fff;
+  border: 1px solid rgb(204, 204, 204);
+  border-radius: 4px;
+  color: #444;
+  font-size: 1.025rem;
+  text-transform: none;
+  font-weight: 300;
+}
+.accessCodeOptionBtn :global(.vtex-button):hover, 
+.emailPasswordOptionBtn :global(.vtex-button):hover {
+  background: #f0f9ff;
+  border: 1px solid rgb(51, 136, 221);
+  transition: all .15s ease-in;
+}
+.contentForm {
+  width: 340px;
+}
+.inputContainer :global(.vtex-input-prefix__group) {
+  border: 1px solid rgb(204, 204, 204);
+  color: #333;
+}
+.inputContainer :global(.vtex-styleguide-9-x-input) {
+  color: #333;
+}
+.backButton :global(.vtex-button),
+.forgotPasswordLink{
+  color: #16b;
+}
+.forgotPasswordLink:hover{
+  color: #16b;
+  opacity: .8;
+  transition: color .15s ease-in;
+}
+.dontHaveAccount {
+  width:100%;
+  color: #111;
+  background: #e7e9ec;
+  border-radius: 4px;
+  text-decoration: none!important;
+  vertical-align: middle;
+  text-align: center;
+  padding: 10px 30px;
+  margin-top: 8px;
+}
+.dontHaveAccount:hover {
+  color: #111;
+  opacity: .8;
+  transition: color .15s ease-in;
+}
+.sendButton :global(.vtex-button){
+  background: #e47911;
+  border: 1px solid #e47911;
+  width: 150px;
+}
+.sendButton :global(.vtex-button):hover{
+  background: #db750f;
+  transition: color .15s ease-in;
+}
+
+@media screen and (max-width: 499px) {
+  .accessCodeOptionBtn {
+    width: 320px;
+  }
 }
