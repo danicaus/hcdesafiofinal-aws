@@ -1,0 +1,76 @@
+{
+  "flex-layout.row#card":{
+    "props": {
+      "blockClass": "category-card-row1"
+    },
+    "children": [
+      "rich-text#card1",
+      "rich-text#card2",
+      "rich-text#card3",
+      "rich-text#card4"
+    ]
+  },
+
+  "rich-text#card1": {
+    "props": {    
+      "blockClass": "category-card",
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "text": "![alt text](assets/categories/analytics.png) \n **Análises e data lakes**\n\n Armazene, categorize e analise todos os dados com segurança, em um único repositório centralizado.\n\n\n [Saiba mais](/aws/analise-de-dados)",
+      "textColor": "c-on-base",
+      "font": "t-body"
+    }
+  },
+
+  "rich-text#card2": {
+    "props": {    
+      "blockClass": "category-card",
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "text": "![alt text](assets/categories/machine-learning.png) \n **Machine Learning**\n\n Crie usando serviços e plataformas potentes, assim como o mais amplo suporte a estruturas de trabalho de machine learning em qualquer lugar.\n\n\n [Saiba mais](/aws/machine-learning)",
+      "textColor": "c-on-base",
+      "font": "t-body"
+    }
+  },
+
+  "rich-text#card3": {
+    "props": {    
+      "blockClass": "category-card",
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "text": "![alt text](assets/categories/serverless.png) \n **Computação sem servidor**\n\n  Crie e execute aplicações e serviços sem se preocupar com servidores.\n\n\n [Saiba mais](/aws/computacao)",
+      "textColor": "c-on-base",
+      "font": "t-body"
+    }
+  },
+
+  "rich-text#card4": {
+    "props": {    
+      "blockClass": "category-card",
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "text": "![alt text](assets/categories/storage.png) \n **Armazenamento**\n\n Opções resilientes e econômicas para backup, recuperação de desastres e arquivamento de dados em escala de petabytes.\n\n\n [Saiba mais](/aws/armazenamento)",
+      "textColor": "c-on-base",
+      "font": "t-body"
+    }
+  },
+
+  "flex-layout.row#all":{
+    "props": {
+      "blockClass": "category-card-row2"
+    },
+    "children": [
+      "rich-text#all"
+    ]
+  },
+
+  "rich-text#all": {
+    "props": {    
+      "textAlignment": "RIGHT",
+      "textPosition": "RIGHT",
+      "text": "[Exibir todos os produtos >>](/aws)",
+      "textColor": "c-on-base",
+      "blockClass": "all-products"
+    }
+  }
+}

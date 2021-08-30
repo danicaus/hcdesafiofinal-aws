@@ -4,6 +4,8 @@
       "slider-layout#demo-images",
       "flex-layout.row#title-product",
       "flex-layout.row#products",
+      "flex-layout.row#card",
+      "flex-layout.row#all",
       "flex-layout.row#leads-form"
     ]
   }
