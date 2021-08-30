@@ -85,7 +85,8 @@
 /*Rich Text Footer*/
 .paragraph--amazon-text {
   color: #ffffff;
-  width: 400px;
+  font-size: 14px;
+  max-width: 300px;
 }
 .container--title-group {
   margin-top: 0;
@@ -134,14 +135,14 @@
   box-shadow:none;
   padding-right: 0;
 }
-.link,
+.link--all-products,
 .link--category-card {
   text-decoration: none;
 }
-.link {
+.link--all-products {
   font-size: 1.2rem;
 }
-.link:hover {
+.link--all-products:hover {
   color: #e47911;
 }
 .strong--category-card {
