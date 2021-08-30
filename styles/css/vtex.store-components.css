@@ -1,0 +1,128 @@
+.container{
+  padding: 0;
+}
+
+.logoContainer {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.searchBarContainer {
+  padding: 0;
+}
+
+.searchBarContainer :global(.vtex-input-prefix__group) {
+  border: 0;
+  border-radius: 0;
+  background-color: transparent;
+}
+
+.searchBarContainer :global(.vtex-input__suffix) {
+  background-color: transparent;
+  padding-right: 0;
+  padding-left: 10px;
+}
+
+.searchBarIcon {
+  color: #ffffff;
+}
+
+:global(.vtex-styleguide-9-x-input) {
+  padding: 5px;
+  color: #aab7b8;
+  background-color: #ffffff;
+  border-radius: 0;
+  font-size: 14px;
+  border: 1px solid #eaeded;
+  width: 600px;
+}
+
+:global(.vtex-styleguide-9-x-input)::placeholder {
+  color: #757577;
+}
+
+.autoCompleteOuterContainer--header {
+  margin: 0 10px 5px 10px;
+}
+
+.searchBarIcon--header:hover {
+  color: #f8991d;
+}
+
+.infoCardContainer{
+  width: 100%;
+  height: 500px;
+  padding: 2rem;
+}
+
+.infoCardHeadline {
+  color: #ffffff;
+}
+
+.infoCardSubhead {
+  color: #ffffff;
+}
+
+.infoCardCallActionContainer :global(.vtex-button) {
+  margin-top: 1.5rem;
+  width: 420px;
+  color: #ffffff;
+  text-transform: none;
+  font-size: 1rem;
+  background: rgb(246,124,27);
+  background: linear-gradient(0deg, rgba(246,124,27,1) 0%, rgba(225,85,0,1) 100%, rgba(0,212,255,1) 100%);
+  border: #FF5500;
+}
+
+.infoCardCallActionContainer :global(.vtex-button):hover {
+  background: #d64b05;
+  border: transparent;
+}
+
+@media (max-width: 768px) {
+  .infoCardContainer{
+      height: 100vh;
+      padding: 1rem;
+  }
+
+  .infoCardCallActionContainer :global(.vtex-button) {
+      max-width: 320px;
+  }
+}
+
+.productBrand{
+  color: #007dbc;
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 500px;
+  color: #3f3939;
+}
+
+.productDescriptionContainer{
+  margin: 20px 0;
+}
+
+.productDescriptionTitle{
+  color: #333333;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.subscriberContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+.title, .subscribeLabel{
+  color: #F47818;
+  font-weight: 600;
+  font-style: italic;
+}

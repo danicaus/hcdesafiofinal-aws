@@ -1,0 +1,257 @@
+{
+  "footer": {
+    "blocks": ["footer-layout.desktop", "footer-layout.mobile"]
+  },
+  "footer-layout.desktop": {
+    "children": ["flex-layout.row#footer"]
+  },
+  "footer-layout.mobile": {
+    "children": ["flex-layout.row#footer-mobile"]
+  },
+  "flex-layout.row#footer": {
+    "props": {
+      "blockClass": "footer-row"
+    },
+    "children": ["flex-layout.col#footer"]
+  },
+  "flex-layout.col#footer": {
+    "props": {
+      "blockClass": "footer-col"
+    },
+    "children": ["flex-layout.row#content-desktop", "flex-layout.row#copyright"]
+  },
+  "flex-layout.row#content-desktop": {
+    /*footer desktop*/
+    "props": {
+      "blockClass": "footer-content"
+    },
+    "children": ["flex-layout.col#content-col1", "flex-layout.col#content-col2"]
+  },
+  "flex-layout.col#content-col1": {
+    /*conteúdo da coluna 1*/
+    "props": {
+      "blockClass": ["footer-content-col1-desktop"],
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "rich-text#title-col1",
+      "flex-layout.row#content-link-services",
+      "flex-layout.row#content-link-about",
+      "flex-layout.row#social-media",
+      "rich-text#amazon-text"
+    ]
+  },
+  "flex-layout.row#content-link-services": {
+    "children": ["link#services"]
+  },
+  "flex-layout.row#content-link-about": {
+    "children": ["link#about"]
+  },
+  "rich-text#title-col1": {
+    "props": {
+      "text": "AWS",
+      "textColor": "c-on-emphasis",
+      "font": "t-heading-5"
+    }
+  },
+  "link#services": {
+    "props": {
+      "blockClass": "link-col",
+      "href": "/",
+      "label": "Serviços"
+    }
+  },
+  "link#about": {
+    "props": {
+      "blockClass": "link-col",
+      "href": "/",
+      "label": "Sobre nós"
+    }
+  },
+  "flex-layout.row#social-media": {
+    "props": {
+      "blockClass": "row-social-media"
+    },
+    "children": ["social-media"]
+  },
+  "rich-text#amazon-text": {
+    "props": {
+      "blockClass": "amazon-text",
+      "text": "A Amazon é uma empresa empregadora orientada pelos fundamentos de igualdade de oportunidades e ações afirmativas, que não faz distinção entre minorias, mulheres, portadores de deficiência, veteranos, identidade de gênero, orientação sexual nem idade."
+    }
+  },
+  "flex-layout.col#content-col2": {
+    "props": {
+      "blockClass": "footer-content-col2"
+    },
+    "children": [
+      "rich-text#content-col2",
+      "link#repository",
+      "link#workspace",
+      "rich-text#content-title-group",
+      "flex-layout.row#group-cols",
+      "footer-spacer#end"
+    ]
+  },
+  "rich-text#content-col2": {
+    "props": {
+      "text": "Projeto",
+      "textColor": "c-on-emphasis",
+      "font": "t-heading-5"
+    }
+  },
+  "link#repository": {
+    "props": {
+      "blockClass": "link-col",
+      "href": "https://github.com/danicaus/hcdesafiofinal-aws",
+      "target": "_blank",
+      "label": "Repositório"
+    }
+  },
+  "link#workspace": {
+    "props": {
+      "blockClass": "link-col",
+      "href": "/",
+      "label": "Workspace"
+    }
+  },
+  "rich-text#content-title-group": {
+    "props": {
+      "blockClass": "title-group",
+      "text": "Grupo",
+      "textColor": "c-on-emphasis",
+      "font": "t-heading-5"
+    }
+  },
+  "flex-layout.row#group-cols": {
+    "props": {
+      "blockClass": "row-group-cols",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true
+    },
+    "children": ["flex-layout.col#group-col-1", "flex-layout.col#group-col-2"]
+  },
+  "flex-layout.col#group-col-1": {
+    "children": [
+      "link#linkedin1",
+      "link#linkedin2",
+      "link#linkedin3",
+      "link#linkedin4",
+      "link#linkedin5"
+    ]
+  },
+  "flex-layout.col#group-col-2": {
+    "props":{
+      "marginLeft": 7
+    },
+    "children": [
+      "link#linkedin6",
+      "link#linkedin7",
+      "link#linkedin8",
+      "link#linkedin9"
+    ]
+  },
+
+  "footer-spacer#end": {
+    "props": {
+      "blockClass": "spacer-end"
+    }
+  },
+  "flex-layout.row#copyright": {
+    "props": {
+      "blockClass": "footer-copyright",
+      "fullWidth": true
+    },
+    "children": ["rich-text#copyright"]
+  },
+  "rich-text#copyright": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Desafio Final - Hiring Coders 2021 - [VTEX](https://vtex.com/br-pt/) | [Gama Academy](https://www.gama.academy/) | [AWS](https://aws.amazon.com/pt/)",
+      "textColor": "c-on-emphasis",
+      "font": "t-heading-5",
+      "blockClass": "text-copyright"
+    }
+  },
+
+  /*mobile*/
+  "flex-layout.row#footer-mobile": {
+    "props": {
+      "blockClass": "footer-row"
+    },
+    "children": [
+      "flex-layout.col#col-mobile0"
+    ]
+  },
+  "flex-layout.col#col-mobile0":{
+    "children": [
+      "flex-layout.row#row-mobile",
+      "flex-layout.row#copyright-mobile"
+    ]
+  },
+  "flex-layout.row#row-mobile": {
+    "props": {
+      "blockClass": "footer-row"
+    },
+    "children": [
+      "flex-layout.col#content-col-mobile"
+    ]
+  },
+  "flex-layout.col#content-col-mobile": {
+    "props":{
+      "blockClass": "content-col-mobile",
+      "marginLeft": 6
+    },
+    "children": [
+      "rich-text#title-col1",
+      "flex-layout.row#content-link-services",
+      "flex-layout.row#content-link-about",
+      "flex-layout.row#social-media",
+      "rich-text#amazon-text",
+      "link#repository",
+      "link#workspace",
+      "rich-text#content-title-group",
+      "flex-layout.row#group-row-mobile",
+      "footer-spacer#end-mobile"
+    ]
+  },
+  "footer-spacer#end-mobile": {
+    "props": {
+      "blockClass": "spacer-end-mobile"
+    }
+  },
+  "flex-layout.row#group-row-mobile": {
+    "children": ["flex-layout.col#group-col-mobile"]
+  },
+  "flex-layout.col#group-col-mobile": {
+    "children": [
+      "link#linkedin1",
+      "link#linkedin2",
+      "link#linkedin3",
+      "link#linkedin4",
+      "link#linkedin5",
+      "link#linkedin6",
+      "link#linkedin7",
+      "link#linkedin8",
+      "link#linkedin9"
+    ]
+  },
+  "flex-layout.row#copyright-mobile": {
+    "props": {
+      "blockClass": "footer-copyright"
+    },
+    "children": ["rich-text#copyright-mobile"]
+  },
+  "rich-text#copyright-mobile": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Desafio Final - Hiring Coders 2021 \n[VTEX](https://vtex.com/br-pt/) | [Gama Academy](https://www.gama.academy/) | [AWS](https://aws.amazon.com/pt/)",
+      "textColor": "c-on-emphasis",
+      "font": "t-heading-5",
+      "blockClass": "text-copyright"
+    }
+  }
+}

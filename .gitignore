@@ -1,4 +1,8 @@
+
 /Other
+
+### SublimeText ###
+*.sublime-workspace
 
 ### OSX ###
 .DS_Store
@@ -37,3 +41,7 @@ build
 lerna-debug.log
 yarn-error.log
 *.orig
+
+.eslintrc
+*.orig
+react/yarn.lock

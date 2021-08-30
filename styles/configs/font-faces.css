@@ -1,0 +1,11 @@
+@font-face {
+  font-family: 'AmazonEmber_Bd';
+  src: url(assets/fonts/AmazonEmber_Bd.woff2);
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'AmazonEmber_Rg';
+  src: url(assets/fonts/AmazonEmber_Rg.woff2);
+  font-weight: 400;
+}

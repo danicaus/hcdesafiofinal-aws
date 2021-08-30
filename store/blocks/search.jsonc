@@ -1,7 +1,200 @@
 {
   "store.search": {
+    "props": {
+      "context": {
+        "skusFilter": "FIRST_AVAILABLE",
+        "simulationBehavior": "skip"
+      }
+    },
+    "blocks": ["search-result-layout"]
+  },
+  "search-result-layout": {
     "blocks": [
-      
+      "search-result-layout.desktop",
+      "search-result-layout.mobile",
+      "search-not-found-layout"
     ]
+  },
+  "search-result-layout.desktop": {
+    "children": ["rich-text#header-result", "flex-layout.row#main-desktop"]
+  },
+  "flex-layout.row#main-desktop": {
+    "props": {
+      "blockClass": "container-desktop"
+    },
+    "children": ["flex-layout.col#left-desktop", "flex-layout.col#right1"]
+  },
+  "flex-layout.col#left-desktop": {
+    "props": {
+      "width": "20%"
+    },
+    "children": ["filter-navigator.v3"]
+  },
+  "filter-navigator.v3": {
+    "props": {
+      "blockClass": "filter-nav-search-result",
+      "maxItemsCategory": "10"
+    }
+  },
+  "flex-layout.col#right1": {
+    "props": {
+      "blockClass": "col-result-content"
+    },
+    "children": ["order-by.v2", "search-content", "search-fetch-more"]
+  },
+  "search-content": {
+    "props": {
+      "blockClass": "search-content-gallery"
+    },
+    "blocks": ["gallery#search-result", "not-found"]
+  },
+  "order-by.v2": {
+    "props": {
+      "blockClass": "result-order-by"
+    }
+  },
+  "gallery#search-result": {
+    "props": {
+      "blockClass": "gallery-search-result"
+    },
+    "blocks": ["product-summary.shelf#search"]
+  },
+  "product-summary.shelf#search": {
+    "props": {
+      "blockClass": "container-summary-search-result"
+    },
+    "children": [
+      "product-summary-image#search-result",
+      "product-summary-name#search-result",
+      "product-summary-description#search-result",
+      "product-summary-price",
+      "add-to-cart-button#search-result"
+    ]
+  },
+  "product-summary-image#search-result": {
+    "props": {
+      "blockClass": "image-search-result"
+    }
+  },
+  "product-summary-name#search-result": {
+    "props": {
+      "blockClass": "product-name-search-result"
+    }
+  },
+  "product-summary-description#search-result": {
+    "props": {
+      "blockClass": "description-search-result"
+    }
+  },
+  "add-to-cart-button#search-result": {
+    "props": {
+      "blockClass": "add-to-cart-button-search-result"
+    }
+  },
+  "rich-text#header-result": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "## Soluções da AWS \n Implementações avaliadas de referência técnica desenvolvidas para ajudar você a solucionar \nproblemas comuns e construir mais rapidamente",
+      "textColor": "black",
+      "blockClass": "header-result"
+    }
+  },
+
+  /*search layout mobile*/
+  "search-result-layout.mobile": {
+    "children": [
+      "rich-text#header-result-mobile",
+      "flex-layout.row#main-mobile"
+    ]
+  },
+  "flex-layout.row#main-mobile": {
+    "props": {
+      "blockClass": "container-mobile"
+    },
+    "children": ["flex-layout.col#col-mobile"]
+  },
+  "flex-layout.col#col-mobile": {
+    "props": {
+      "blockClass": "col-result-content"
+    },
+    "children": [
+      "filter-navigator.v3#mobile",
+      "order-by.v2",
+      "search-content#mobile",
+      "search-fetch-more"
+    ]
+  },
+  "rich-text#header-result-mobile": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "## Soluções da AWS \n Implementações avaliadas de referência técnica desenvolvidas para ajudar você a solucionar problemas comuns e construir mais rapidamente",
+      "textColor": "black",
+      "blockClass": ["header-result", "header-result-mobile"]
+    }
+  },
+  "filter-navigator.v3#mobile": {
+    "props": {
+      "blockClass": ["filter-nav-search-result"]
+    }
+  },
+  "search-content#mobile": {
+    "blocks": ["gallery#search-result-mobile", "not-found"]
+  },
+  "gallery#search-result-mobile": {
+    "props": {
+      "blockClass": ["gallery-search-result-mobile", "gallery-search-result"]
+    },
+    "blocks": ["product-summary.shelf#search"]
+  },
+
+  /*search not-found*/
+  "search-not-found-layout": {
+    "children": [
+      "image#not-found",
+      "rich-text#title-not-found",
+      "search-result-layout.customQuery#search-not-found"
+    ]
+  },
+  "image#not-found": {
+    "props": {
+      "src": "assets/not-found/404-error-rafiki-1.svg",
+      "maxHeight": 335
+    }
+  },
+  "rich-text#title-not-found": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "## Nenhum resultado encontrado. \nVerifique se você digitou corretamente ou tente palavras-chave diferentes",
+      "blockClass": "title-not-found"
+    }
+  },
+  "search-result-layout.customQuery#search-not-found": {
+    "props": {
+      "querySchema": {
+        "skusFilter": "FIRST_AVAILABLE",
+        "simulationBehavior": "skip",
+        "orderByField": "OrderByTopSaleDESC",
+        "hideUnavailableItems": true,
+        "maxItemsPerPage": 4,
+        "queryField": "amazon",
+        "mapField": "ft"
+      }
+    },
+    "blocks": [
+      "search-result-layout.desktop#not-found",
+      "search-result-layout.mobile#not-found"
+    ]
+  },
+  "search-result-layout.desktop#not-found": {
+    "props": {
+      "blockClass": "search-notfound"
+    },
+    "children": ["search-content"]
+  },
+  "search-result-layout.mobile#not-found": {
+    "children": ["search-content"]
   }
 }

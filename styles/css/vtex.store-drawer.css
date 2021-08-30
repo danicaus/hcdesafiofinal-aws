@@ -1,0 +1,51 @@
+.menuIcon--burguer-menu {
+  color: #ffffff;
+}
+
+.childrenContainer--burguer-menu {
+  flex-direction: column;
+}
+
+.closeIcon--burguer-menu {
+  color: #f8991d;
+}
+
+.closeIconButton--burguer-menu {
+  text-align: end;
+}
+
+.overlay--burguer-menu {
+  opacity: 0;
+}
+
+.drawer--burguer-menu {
+  top: 48px;
+  border-top: 1px solid #4d5360;
+  background-color: #232f3e;
+}
+
+.childrenContainer--burguer-menu,
+.closeIconContainer--burguer-menu {
+  padding: 0 18px;
+}
+
+.overlay {
+  background-color: #232f3e;
+}
+
+.childrenContainer--burguer-menu :global(.vtex-login-2-x-buttonLink) {
+  padding: 15px 0;
+  margin: 0 20px;
+  border-bottom: 1px solid #4d5360;
+}
+
+.childrenContainer--burguer-menu :global(.vtex-button) {
+  background-color: transparent;
+  background-image: none;
+  border-width: 0;
+  box-shadow: none;
+  padding: 0;
+  min-height: 30px;
+  margin-left: 0;
+  text-align: left;
+}

@@ -1,15 +1,12 @@
 {
-  "store.home": { 
+  "store.home": {
     "blocks": [
-      "rich-text"
+      "slider-layout#demo-images",
+      "flex-layout.row#title-product",
+      "flex-layout.row#products",
+      "flex-layout.row#card",
+      "flex-layout.row#all",
+      "flex-layout.row#leads-form"
     ]
-  },
-  "rich-text": { 
-    "props": { 
-      "text": "Projeto Final",
-      "textAlignment": "CENTER",
-      "textPosition": "CENTER",
-      "font": "t-heading-1"
-    }
   }
 }
