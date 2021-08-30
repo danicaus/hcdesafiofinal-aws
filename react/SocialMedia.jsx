@@ -1,19 +1,20 @@
 import React from "react";
 import { useCssHandles } from "vtex.css-handles";
-import '../styles/css/social-media.css'
+import '../styles/css/social-media.css';
 
 const CSS_HANDLES = ["container", "link", "icon"];
 
 const SocialMedia = ({}) => {
   const iconStyle = {
-    fill: "#fff",
+    fill: "#ffffff",
     width: "25px",
+    heigh: "25px"
   };
 
   const handles = useCssHandles(CSS_HANDLES);
 
   return (
-    <div className={`${handles.container} tc`}>
+    <div id="social-media" className={`${handles.container} tc`}>
       <a
         className={`${handles.link}`}
         href="https://twitter.com/awscloud"

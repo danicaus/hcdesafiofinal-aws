@@ -71,7 +71,7 @@
   "link#leads-form": {
     "props": {
       "blockClass": "header",
-      "scrollTo": "flex-layout.col#leads-form",
+      "href": "#leads-form",
       "label": "Entre em contato conosco"
     }
   },
@@ -229,7 +229,7 @@
       "id": "menu-item-contact",
       "type": "custom",
       "itemProps": {
-        "href": "leads-form",
+        "href": "#leads-form",
         "tagTitle": "contact",
         "text": "Entre em contato conosco"
       }

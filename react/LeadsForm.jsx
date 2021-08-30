@@ -1,10 +1,8 @@
-import React from 'react'
-import { useCssHandles } from 'vtex.css-handles'
-import { useState } from 'react';
-import '../styles/css/leads-form.css'
+import React, { useState } from 'react';
+import { useCssHandles } from 'vtex.css-handles';
+import '../styles/css/leads-form.css';
 
 const CSS_HANDLES = ['LeadsFormContainer', 'LeadsFormInputContainer', 'LeadsFormLabel', 'LeadsFormInput', 'LeadsFormButton', 'LeadsFormValidation', 'FormConfirmationTitle']
-
 
 const LeadsForm = () => {
   const handles = useCssHandles(CSS_HANDLES)
@@ -34,7 +32,7 @@ const LeadsForm = () => {
     setSubscribed(true)
 
     //Caso o form não tenha sido enviado com sucesso, colocar o alert
-   // alert("Erro ao se conectar ao servidor")
+    // alert("Erro ao se conectar ao servidor")
   }
 
   function handleValidation(input) {
@@ -49,7 +47,7 @@ const LeadsForm = () => {
 
   const renderForm = ()=> {
     return (
-      <form onSubmit={handleForm}>
+      <form id="leads-form" onSubmit={handleForm}>
         <div className={`${handles.LeadsFormInputContainer}`}>
           <label className={`${handles.LeadsFormLabel}`} htmlFor="personName">Nome</label>
           <input className={`${handles.LeadsFormInput}`} onBlur={(e) => handleValidation(e.target)} onChange={e => setName(e.target.value)} type="text" minLength="3" name="personName" required id="personName"/>
