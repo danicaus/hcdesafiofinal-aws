@@ -44,7 +44,7 @@
   },
   "search-content": {
     "props": {
-      "blocklClass": "search-content-gallery"
+      "blockClass": "search-content-gallery"
     },
     "blocks": ["gallery#search-result", "not-found"]
   },
