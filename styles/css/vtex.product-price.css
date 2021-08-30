@@ -2,3 +2,65 @@
   margin-bottom: 1rem;
   font-size: 0.875rem;
 }
+
+.listPrice {
+  color: #727273;
+  font-size: 1rem;
+}
+
+.savings {
+  color: #68aa1c;
+}
+
+.savings--summary {
+  background: #68aa1c;
+  border-radius: 1000px;
+  align-items: center;
+  display: flex;
+
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  font-size: 0.875rem;
+  vertical-align: baseline;
+  color: #FFFFFF;
+}
+
+.sellingPrice {
+  color: #3f3f40;
+  font-size: 1.25rem;
+}
+
+.sellingPriceValue {
+  font-size: 2.25rem;
+  font-weight: 700;
+}
+
+.sellingPriceValue--summary {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #2E2E2E;
+}
+
+.savings-discount--summary {
+  font-size: 0.875rem;
+  font-weight: 600;
+  vertical-align: baseline;
+  color: #FFFFFF;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.savings--summaryPercentage {
+  background: #0f3e99;
+  border-radius: 1000px;
+  align-items: center;
+  display: flex;
+}
+
+.savingsPercentage--summaryPercentage {
+  font-size: 0.875rem;
+  font-weight: 600;
+  vertical-align: baseline;
+  color: #FFFFFF;
+  padding: 0.25rem 0.5rem 0.25rem 0.5rem;
+}
