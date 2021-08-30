@@ -112,3 +112,15 @@
   color: #FFFFFF;
   border-color: #f47818;
 }
+
+/*Cards de categoria*/
+.flexRow--category-card-row1 {
+  background-color:  #F2F4F4;
+  padding: 50px 60px 5px;
+}
+.flexRow--category-card-row2 {
+  background-color:  #F2F4F4;
+  padding: 0 60px 50px;
+}
+
+
