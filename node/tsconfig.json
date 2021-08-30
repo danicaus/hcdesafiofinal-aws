@@ -3,7 +3,7 @@
   "compilerOptions": {
     "types": ["node", "jest"],
     "typeRoots": ["node_modules/@types"],
-    "target": "es2017",
+    "target": "es2019",
     "module": "commonjs",
     "moduleResolution": "node",
     "allowJs": false,
@@ -19,7 +19,7 @@
     "strictNullChecks": true,
     "strictFunctionTypes": true,
     "strictPropertyInitialization": true,
-    "esModuleInterop": true,
+    "esModuleInterop": true
   },
   "typeAcquisition": {
     "enable": false

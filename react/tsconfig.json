@@ -15,7 +15,10 @@
   },
   "include": [
     "./typings/*.d.ts",
+    "./**/*.d.ts",
     "./**/*.tsx",
-    "./**/*.ts"
-, "LeadsForm.jsx"  ]
+    "./**/*.ts",
+    "LeadsForm.jsx",
+    "./**/*.graphql"
+  ]
 }

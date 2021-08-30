@@ -1,0 +1,5 @@
+query getLead(email){
+  lead(email){
+    name
+  }
+}

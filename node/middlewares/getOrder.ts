@@ -27,7 +27,10 @@ export async function getOrderId(
   const [{email}] = clientEmail
 
   console.log(email)
-  //await ctx.clients.leadsApi.updateLead(email)
+  const isLead = await ctx.clients.leadAPI.lead(email)
+  if (isLead && isLead?.situation == "Prospecto") {
+    ctx.clients.leadAPI.updateLead(email)
+  }
 
   ctx.body = 'OK'
   ctx.status = 200

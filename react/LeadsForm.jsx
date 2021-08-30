@@ -1,6 +1,7 @@
 import React from 'react'
 import { useCssHandles } from 'vtex.css-handles'
 import { useState } from 'react';
+import createLead from './graphql/createLead.graphql'
 
 const CSS_HANDLES = ['LeadsFormContainer', 'LeadsFormInputContainer', 'LeadsFormLabel', 'LeadsFormInput', 'LeadsFormButton']
 
@@ -9,7 +10,7 @@ const LeadsForm = () => {
   const handles = useCssHandles(CSS_HANDLES)
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
-  const [telephone, setTelephone] = useState('')
+  const [phone, setPhone] = useState('')
   
   async function handleForm(e) {
     e.preventDefault()
@@ -18,12 +19,18 @@ const LeadsForm = () => {
       body: {
         name: name,
         email: email,
-        telephone: telephone
+        phone: phone
       }
     }
-    //código para enviar para a API aqui
-
+    
     console.log(formData);
+    const isLead = await ctx.clients.leadAPI.getLead(email)
+    console.log('LEAD', isLead)
+    if (!isLead) {
+      console.log('IS NOT LEAD YET')
+      createLead(formData.body)
+    }
+
   }
 
   return (
@@ -41,10 +48,10 @@ const LeadsForm = () => {
 
         <div className={`${handles.LeadsFormInputContainer}`}>
           <label className={`${handles.LeadsFormLabel}`} htmlFor="personTel">Telefone</label>
-          <input className={`${handles.LeadsFormInput}`} onChange={e => setTelephone(e.target.value)} type="text" name="personTel" id="personTel" required placeholder="Digite seu telefone" />
+          <input className={`${handles.LeadsFormInput}`} onChange={e => setPhone(e.target.value)} type="text" name="personTel" id="personTel" required placeholder="Digite seu telefone" />
         </div>
 
-        <button className={`${handles.LeadsFormButton}`} type="submit">Eu quero!</button>
+        <button className={`${handles.LeadsFormButton}`} type="submit" onClick={handleForm}>Eu quero!</button>
       </form>
     </div>
   )

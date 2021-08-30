@@ -13,7 +13,7 @@
     "react": "3.x",
     "store": "0.x",
     "graphql": "1.x",
-    "node": "6.x"
+    "node": "6.x",
     "styles": "2.x"
   },
   "scripts": {
@@ -43,6 +43,13 @@
       "name": "OMSViewer"
     },
     {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "z584vx4z2e.execute-api.us-east-2.amazonaws.com/",
+        "path": "*"
+      }
+    },
+    {
       "name": "colossus-fire-event"
     },
     {
@@ -50,11 +57,9 @@
     },
     {
       "name": "graphql-query"
-      "name": "vbase-read-write"
     }
   ],
   "dependencies": {
-    "hiringcoders202123.projeto-final": "0.x",
     "vtex.add-to-cart-button": "0.x",
     "vtex.breadcrumb": "1.x",
     "vtex.carousel": "2.x",

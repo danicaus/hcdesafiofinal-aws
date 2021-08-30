@@ -1,5 +1,5 @@
-
 export const leads = (
   _: any,
-  { clients: { lead: leadClient } }: Context
+  __: any,
+  { clients: { leadAPI: leadClient } }: Context
 ) => leadClient.leads()

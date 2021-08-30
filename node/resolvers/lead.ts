@@ -1,5 +1,5 @@
-export const lead = async (
+export const lead = (
   _: any,
   { email }: { email: string },
-  { clients: { lead: leadClient } }: Context
+  { clients: { leadAPI: leadClient } }: Context
 ) => leadClient.lead(email)
