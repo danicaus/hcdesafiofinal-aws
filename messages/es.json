@@ -1,6 +1,6 @@
 {
-	"admin-leads.navigation.label": "ADMIN",
-	"admin.navigation.search.kws": "admin, leads, administrar, administración, aws",
+	"admin-leads.navigation.label": "Leads",
+	"admin-leads.navigation.search.kws": "admin, leads, administrar, administración, aws",
 
 	"menuIten1": "Productos",
 	"menuIten2": "Sobre nosotros",
@@ -76,6 +76,6 @@
 	"about-basicConcepts3-iten3": "Obtenga respuesta a sus preguntas gracias a la comunidad de AWS en el foro de la comunidad de AWS.",
 	"about-basicConcepts3-iten4": "Si es un cliente corporativo y desea plantear alguna pregunta, póngase en contacto con alguno de nuestros representantes de ventas globales.",
 
-  "editor.social-media.title": "Social Media",
-  "editor.social-media.description": "Social Media component"
+  	"editor.social-media.title": "Social Media",
+  	"editor.social-media.description": "Social Media component"
 }

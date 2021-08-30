@@ -14,7 +14,8 @@
     "store": "0.x",
     "graphql": "1.x",
     "node": "6.x",
-    "styles": "2.x"
+    "styles": "2.x",
+    "admin": "0.x"
   },
   "scripts": {
     "postreleasy": "vtex publish --verbose",

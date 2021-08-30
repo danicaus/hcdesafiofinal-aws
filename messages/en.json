@@ -1,6 +1,6 @@
 {
-  "admin-leads.navigation.label": "ADMIN",
-  "admin.navigation.search.kws": "admin, leads, management, aws",
+  	"admin-leads.navigation.label": "Leads",
+  	"admin-leads.navigation.search.kws": "admin, leads, management, aws",
 
 	"menuIten1": "Products",
 	"menuIten2": "About Us",
@@ -11,11 +11,11 @@
 	"footer-social": "Developed by:",
 	"footer-copyright": "Final challenge - Contracting 2021 coders - VTEX | Reach of the academy | AWS - &copy; All rights reserved",
 
-  "about-title": "About AWS",
+  	"about-title": "About AWS",
 	"about-paragraph1": "In 2006, Amazon Web Services (AWS) began offering IT infrastructure services to businesses in the form of web services -- now commonly known as cloud computing. One of the key benefits of cloud computing is the opportunity to replace up-front capital infrastructure expenses with low variable costs that scale with your business. With the Cloud, businesses no longer need to plan for and procure servers and other IT infrastructure weeks or months in advance. Instead, they can instantly spin up hundreds or thousands of servers in minutes and deliver results faster.",
 	"about-paragraph2": "Today, Amazon Web Services provides a highly reliable, scalable, low-cost infrastructure platform in the cloud that powers hundreds of thousands of businesses in 190 countries around the world. With data center locations in the U.S., Europe, Brazil, Singapore, Japan, and Australia, customers across all industries are taking advantage of the following benefits:",
 	
-  "about-benefits1": "Low Cost",
+  	"about-benefits1": "Low Cost",
 	"about-benefits1-paragraph": "AWS offers low, pay-as-you-go pricing with no up-front expenses or long-term commitments. We are able to build and manage a global infrastructure at scale, and pass the cost saving benefits onto you in the form of lower prices. With the efficiencies of our scale and expertise, we have been able to lower our prices on 15 different occasions over the past four years. ",
 	"about-benefits1-link": "Visit the Economics Center to learn more.",
 	"about-benefits2": "Agility and Instant Elasticity",
@@ -76,6 +76,6 @@
 	"about-basicConcepts3-iten3": "Get your questions answered by the AWS community on the AWS Community Forum.",
 	"about-basicConcepts3-iten4": "If you are a corporate customer contact one of our global sales representatives with questions.",
 
-  "editor.social-media.title": "Social Media",
-  "editor.social-media.description": "Social Media component"
+  	"editor.social-media.title": "Social Media",
+  	"editor.social-media.description": "Social Media component"
 }

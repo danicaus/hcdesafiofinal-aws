@@ -1,6 +1,6 @@
 {
-	"admin-leads.navigation.label": "ADMIN",
-	"admin.navigation.search.kws": "admin, leads, gerenciar, gestão, aws",
+	"admin-leads.navigation.label": "Leads",
+	"admin-leads.navigation.search.kws": "admin, leads, gerenciar, gestão, aws",
 	
 	"menuIten1": "Produtos",
 	"menuIten2": "Sobre nós",
@@ -11,11 +11,11 @@
 	"footer-social": "Desenvolvido por:",
 	"footer-copyright": "Desafio final - Contratação de codificadores 2021 - VTEX | Alcance da academia | AWS - &copy; Todos os direitos reservados",
 
-  "about-title": "Sobre a AWS",
+  	"about-title": "Sobre a AWS",
 	"about-paragraph1": "Em 2006, a Amazon Web Services (AWS) começou a oferecer serviços de infraestrutura de TI para empresas por meio de serviços web – hoje conhecidos como computação em nuvem. Um dos principais benefícios da computação em nuvem é a oportunidade de substituir diretamente gastos com a infraestrutura principal por preços variáveis baixos, que se ajustam de acordo com sua empresa. Com a Nuvem, as empresas não precisam mais planejar ou adquirir servidores, assim como outras infraestruturas de TI, com semanas ou meses de antecedência. Em vez disso, podem instantaneamente rodar centenas de milhares de servidores em minutos e oferecer resultados mais rapidamente.",
 	"about-paragraph2": "Atualmente, a Amazon Web Services oferece uma plataforma de infraestrutura altamente confiável, escalável e de baixo custo na nuvem que potencializa centenas de milhares de empresas em 190 países ao redor do mundo. Com datacenters localizados nos EUA, Europa, Brasil, Cingapura, Japão e Austrália, clientes de todos os setores estão tendo vantagens com os seguintes benefícios:",
 	
-  "about-benefits1": "Baixo custo",
+  	"about-benefits1": "Baixo custo",
 	"about-benefits1-paragraph": "A AWS oferece preços baixos e do tipo pague o que usar, sem despesas iniciais nem compromissos em longo prazo. Somos capazes de construir e gerenciar uma infraestrutura em escala global e passar os benefícios de redução de custos para você sob a forma de preços mais baixos. Com a eficiência de nosso dimensionamento e expertise, foi possível reduzir preços em 15 diferentes ocasiões nos últimos quatro anos. ",
 	"about-benefits1-link": "Visite o Centro de informações sobre economia para saber mais.",
 	"about-benefits2": "Agilidade e elasticidade instantânea",
@@ -76,6 +76,6 @@
 	"about-basicConcepts3-iten3": "Esclareça suas dúvidas sobe a Comunidade da AWS no Fórum da comunidade da AWS.",
 	"about-basicConcepts3-iten4": "Se você for um cliente corporativo, entre em contato com um de nossos representantes de vendas globais para esclarecer suas dúvidas.",
 
-  "editor.social-media.title": "Social Midia",
-  "editor.social-media.description": "Social Midia component"
+  	"editor.social-media.title": "Social Midia",
+  	"editor.social-media.description": "Social Midia component"
 }
