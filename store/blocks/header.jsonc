@@ -118,7 +118,7 @@
       "id": "menu-item-product",
       "type": "custom",
       "itemProps": {
-        "href": "#",
+        "href": "/aws",
         "tagTitle": "Produtos",
         "text": "Produtos"
       }

@@ -90,3 +90,25 @@
 .flexColChild--productOne{
   margin: 10px 0;
 }
+
+/*Slider de produtos da home*/
+.flexRowContent--price {
+  justify-content: center;
+  color: #333333;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+/*Página do produto*/
+.flexCol--productOne :global(.vtex-button) {
+  background-color: #ec7211;
+  background-image: linear-gradient(180deg,#f67c1b 0,#e15500);
+  color: #FFFFFF;
+  border-color: #f47818;
+}
+.flexCol--productOne :global(.vtex-button):hover {
+  background-color: #eb5f07;
+  background-image: linear-gradient(180deg,#e76d0c 0,#d74b00);
+  color: #FFFFFF;
+  border-color: #f47818;
+}

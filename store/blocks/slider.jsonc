@@ -9,6 +9,7 @@
       "info-card#6"
     ],
     "props": {
+      "blockClass": "demo-images",
       "itemsPerPage": {
         "desktop": 1,
         "tablet": 1,

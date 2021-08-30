@@ -68,7 +68,7 @@
       "product-summary-name#search-result",
       "product-summary-description#search-result",
       "product-summary-price",
-      "add-to-cart-button"
+      "add-to-cart-button#search-result"
     ]
   },
   "product-summary-image#search-result": {
@@ -86,7 +86,7 @@
       "blockClass": "description-search-result"
     }
   },
-  "add-to-cart-button": {
+  "add-to-cart-button#search-result": {
     "props": {
       "blockClass": "add-to-cart-button-search-result"
     }

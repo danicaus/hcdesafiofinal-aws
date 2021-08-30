@@ -55,10 +55,12 @@
 
 .buttonShowMore :global(.vtex-button) {
   border: 1px #e47911 solid;
+  color: #FFFFFF;
 }
 .buttonShowMore :global(.vtex-button):hover {
   border: 1px #d1700f solid;
   background:#da740f;
+  color: #FFFFFF;
 } 
 
 /*Style Search Reasult Mobile*/
