@@ -21,8 +21,8 @@
 
 /*Flex Layout Search Result*/
 .flexRow--container-desktop {
-  margin: 20px auto 40px;
-  max-width: 1280px; 
+  margin: 20px 93px;
+  max-width: 1350px; 
 }
 .flexRow--container-mobile{
   margin-bottom: 40px;
@@ -36,24 +36,25 @@
 
 /*Flex Layout Footer*/
 .flexRowContent--footer-content {
-  max-width: 100vw;
+  max-width: 100%;
 }
 .flexCol--footer-content-col1 {
-  max-width:70%;
+  max-width:240px;
 }
 .flexCol--footer-content-col1-desktop {
   max-width:300px;
 }
 .flexCol--footer-content-col2{
-  max-width:70%;
+  max-width:320px;
 }
 
 .flexRowContent--footer-copyright {
   background: #eaeded;
+  width: 100%
 }
 
 .flexRowContent--row-social-media {
-  margin-top: 10px;
+  width: 200px;
 }
 
 .flexCol--content-col1-mobile  {
