@@ -41,9 +41,8 @@
 		"children": [
       "product-images",
       "vtex.store-components:product-name",
-      "product-price",
       "product-description",
-      "product-specifications",
+      "product-price",
       "add-to-cart-button#pdp"
 		]
 	},
