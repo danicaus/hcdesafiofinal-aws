@@ -1,4 +1,4 @@
-/*Botão de Fazer Login*/
+/* Login button */
 .container :global(.vtex-button) {
   background-color: #ec7211;
   background-image: linear-gradient(180deg,#f67c1b 0,#e15500);
@@ -11,12 +11,10 @@
   min-height: 30px;
   margin-left: 13px;
 }
-
 .container :global(.vtex-button):hover {
   background-color: #eb5f07;
   background-image: linear-gradient(180deg,#e76d0c 0,#d74b00);
 }
-
 .label{
   display: block;
   color: #ffffff;
@@ -26,26 +24,22 @@
   text-transform: none;
   font-size: 14px;
 }
-
 .container :global(.vtex-button__label.ph6), 
 .buttonLink :global(.vtex-button__label.ph4) {
   padding: 0 !important;
 }
-
 :global(.vtex-store-drawer-0-x-childrenContainer--burguer-menu) .buttonLink :global(.vtex-button__label) {
   justify-content: left;
   margin-left: .25rem;
 }
-
 :global(.vtex-store-drawer-0-x-childrenContainer--burguer-menu) .label {
   color: #f8991d;
 }
-
 :global(.vtex-store-drawer-0-x-childrenContainer--burguer-menu) .container :global(.relative) {
   width: 100%;
 }
 
-/*LOGIN BOX*/
+/* Login Box */
 .box{
   right: -85px !important; 
 }
@@ -54,10 +48,10 @@
 }
 .accessCodeOptionBtn :global(.vtex-button), 
 .emailPasswordOptionBtn :global(.vtex-button) {
-  background: #fff;
-  border: 1px solid rgb(204, 204, 204);
+  background: #ffffff;
+  border: 1px solid #cccccc;
   border-radius: 4px;
-  color: #444;
+  color: #444444;
   font-size: 1.025rem;
   text-transform: none;
   font-weight: 300;
@@ -65,31 +59,31 @@
 .accessCodeOptionBtn :global(.vtex-button):hover, 
 .emailPasswordOptionBtn :global(.vtex-button):hover {
   background: #f0f9ff;
-  border: 1px solid rgb(51, 136, 221);
+  border: 1px solid #3388dd;
   transition: all .15s ease-in;
 }
 .contentForm {
   width: 340px;
 }
-.inputContainer :global(.vtex-input-prefix__group) {
-  border: 1px solid rgb(204, 204, 204);
-  color: #333;
-}
+.inputContainer :global(.vtex-input-prefix__group),
 .inputContainer :global(.vtex-styleguide-9-x-input) {
-  color: #333;
+  color: #333333;
+}
+.inputContainer :global(.vtex-input-prefix__group) {
+  border: 1px solid #cccccc;
 }
 .backButton :global(.vtex-button),
-.forgotPasswordLink{
-  color: #16b;
+.forgotPasswordLink,
+.forgotPasswordLink:hover{
+  color: #1166bb;
 }
 .forgotPasswordLink:hover{
-  color: #16b;
   opacity: .8;
   transition: color .15s ease-in;
 }
 .dontHaveAccount {
   width:100%;
-  color: #111;
+  color: #111111;
   background: #e7e9ec;
   border-radius: 4px;
   text-decoration: none!important;
@@ -99,7 +93,7 @@
   margin-top: 8px;
 }
 .dontHaveAccount:hover {
-  color: #111;
+  color: #111111;
   opacity: .8;
   transition: color .15s ease-in;
 }
@@ -112,8 +106,7 @@
   background: #db750f;
   transition: color .15s ease-in;
 }
-
-@media screen and (max-width: 499px) {
+@media (max-width: 499px) {
   .accessCodeOptionBtn {
     width: 320px;
   }

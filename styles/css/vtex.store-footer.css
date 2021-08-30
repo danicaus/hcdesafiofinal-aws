@@ -1,13 +1,11 @@
 .footerLayout {
-  background-color: #242F3E;
+  background-color: #242f3e;
   color: #ffffff;
   margin-top: 50px;
 }
-
 .footerSpacer--spacer2 {
   height:50px;
 }
-
 .footerSpacer--spacer-end {
   height: 75px;
 }
