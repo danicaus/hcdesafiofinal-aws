@@ -76,6 +76,13 @@
   border: transparent;
 }
 
+.discountInsideContainer {
+  background:#da510d;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 14px;
+}
+
 @media screen and (max-width: 768px) {
   .infoCardContainer{
       height: 100vh;
