@@ -1,0 +1,46 @@
+{
+  "flex-layout.row#leads-form": {
+    "props": {
+      "horizontalAlign": "center",
+      "blockClass": "leads-form-section"
+    },
+    "children": [
+      "flex-layout.col#form-description",
+      "flex-layout.col#leads-form"
+    ]
+  },
+  "flex-layout.col#form-description": {
+    "props": {
+      "blockClass": "leads-form-description",
+      "horizontalAlign": "center"
+    },
+    "children": [
+      "rich-text#form-title",
+      "rich-text#form-subtitle",
+      "image#form"
+    ]
+  },
+  "rich-text#form-title": {
+    "props": {
+      "textAlignment": "center",
+      "text": "### Cadastre-se para ganhar descontos exclusivos!"
+    }
+  },
+  "rich-text#form-subtitle": {
+    "props": {
+      "font": "t-body",
+      "textAlignment": "center",
+      "text": "Além de receber sobre novidades e serviços em primeira mão"
+    }
+  },
+  "image#form": {
+    "props": {
+      "src": "assets/form/credential-light.png"
+    }
+  },
+  "flex-layout.col#leads-form": {
+    "children": [
+      "leads-form"
+    ]
+  }
+}
