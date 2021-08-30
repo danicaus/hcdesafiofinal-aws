@@ -37,13 +37,14 @@
   padding: 4px 20px;
   font-weight: 700;
   color: #ffffff;
+  width: 100%;
   cursor: pointer;
 }
 
 .LeadsFormButton:hover {
   background: #eb5f07;
   border-color: #dd6b10;
-  width: 100%
+  width: 100%;
 }
 
 .FormConfirmationTitle {
