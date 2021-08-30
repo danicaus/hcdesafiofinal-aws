@@ -1,5 +1,5 @@
-query getLead(email){
-  lead(email){
+query getLead($email: String){
+  lead(email: $email){
     name
   }
 }

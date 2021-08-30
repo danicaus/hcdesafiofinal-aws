@@ -1,6 +1,7 @@
 import React from 'react'
 import { useCssHandles } from 'vtex.css-handles'
 import { useState } from 'react';
+import getLead from './graphql/getLead.graphql'
 import createLead from './graphql/createLead.graphql'
 
 const CSS_HANDLES = ['LeadsFormContainer', 'LeadsFormInputContainer', 'LeadsFormLabel', 'LeadsFormInput', 'LeadsFormButton']
@@ -23,8 +24,8 @@ const LeadsForm = () => {
       }
     }
     
-    console.log(formData);
-    const isLead = await ctx.clients.leadAPI.getLead(email)
+    console.log(formData.body);
+    const isLead = await getLead(formData.body.email)
     console.log('LEAD', isLead)
     if (!isLead) {
       console.log('IS NOT LEAD YET')
