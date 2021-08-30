@@ -1,9 +1,4 @@
 {
-  "store.slider": {
-    "blocks": [
-      "slider-layout#demo-images"
-    ]
-  },
   "slider-layout#demo-images": {
     "children": [
       "info-card#1",

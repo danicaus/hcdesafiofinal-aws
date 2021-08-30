@@ -1,6 +1,7 @@
 import React from 'react'
 import { useCssHandles } from 'vtex.css-handles'
 import { useState } from 'react';
+import '../styles/css/leads-form.css'
 
 const CSS_HANDLES = ['LeadsFormContainer', 'LeadsFormInputContainer', 'LeadsFormLabel', 'LeadsFormInput', 'LeadsFormButton']
 

@@ -1,12 +1,15 @@
 {
   "store.home": {
     "blocks": [
-      "store.slider",
-      "search-result-layout.customQuery#categoria",
+      "slider-layout#demo-images",
       "flex-layout.row#leads-form"
     ]
   },
   "flex-layout.row#leads-form": {
+    "props": {
+      "horizontalAlign": "center",
+      "blockClass": "leads-form-section"
+    },
     "children": [
       "flex-layout.col#form-description",
       "flex-layout.col#leads-form"
@@ -14,7 +17,7 @@
   },
   "flex-layout.col#form-description": {
     "props": {
-      "border": "right",
+      "blockClass": "leads-form-description",
       "horizontalAlign": "center"
     },
     "children": [
@@ -25,12 +28,14 @@
   },
   "rich-text#form-title": {
     "props": {
+      "textAlignment": "center",
       "text": "### Cadastre-se para ganhar descontos exclusivos!"
     }
   },
   "rich-text#form-subtitle": {
     "props": {
       "font": "t-body",
+      "textAlignment": "center",
       "text": "Além de receber sobre novidades e serviços em primeira mão"
     }
   },
@@ -39,88 +44,88 @@
       "src": "assets/form/credential-light.png"
     }
   },
-  "product-summary.shelf#home": {
-    "children": [
-      "product-summary-name",
-      "product-summary-image",
-      "product-price",
-      "buy-button"
-    ]
-  },
-  "search-result-layout.customQuery#categoria": {
-    "props": {
-      "querySchema": {
-        "orderByField": "OrderByReleaseDateDESC",
-        "hideUnavailableItems": true,
-        "maxItemsPerPage": 8,
-        "queryField": "AWS",
-        "mapField": "c"
-      }
-    },
-    "blocks": [
-      "search-result-layout.desktop",
-      "search-result-layout.mobile",
-      "search-not-found-layout"
-    ]
-  },
-
-  "search-result-layout.desktop": {
-    "children": [
-      "flex-layout.row#results",
-      "search-fetch-more"
-    ],
-    "props": {
-      "pagination": "show-more",
-      "preventRouteChange": true,
-      "defaultGalleryLayout": "duasColunas"
-    }
-  },
-  "flex-layout.row#results": { 
-    "children": [ 
-      "flex-layout.col#search"
-    ]
-  },
-  "flex-layout.col#search": { 
-    "children": [
-      "search-content"
-    ]
-  },
-  "search-content": { 
-    "blocks": ["gallery", "not-found"]
-  },
-  "gallery": {
-    "props": {
-      "layouts": [
-        {
-          "name": "umaColuna",
-          "component": "Produto",
-          "itemsPerRow": 1
-        },
-        {
-          "name": "duasColunas",
-          "component": "Produto",
-          "itemsPerRow": 4
-        }
-      ],
-      "Produto": "product-summary.shelf#home"
-    }
-  },
-  "search-result-layout.mobile": {
-    "children": [
-      "flex-layout.row#results",
-      "search-fetch-more"
-    ],
-    "props": {
-      "pagination": "show-more",
-      "preventRouteChange": true,
-      "defaultGalleryLayout": "umaColuna",
-      "mobileLayout":{
-        "mode1": "small"
-      }
-    }
   "flex-layout.col#leads-form": {
     "children": [
       "leads-form"
     ]
   }
+  // "product-summary.shelf#home": {
+  //   "children": [
+  //     "product-summary-name",
+  //     "product-summary-image",
+  //     "product-price",
+  //     "buy-button"
+  //   ]
+  // }
+  // "search-result-layout.customQuery#categoria": {
+  //   "props": {
+  //     "querySchema": {
+  //       "orderByField": "OrderByReleaseDateDESC",
+  //       "hideUnavailableItems": true,
+  //       "maxItemsPerPage": 8,
+  //       "queryField": "AWS",
+  //       "mapField": "c"
+  //     }
+  //   },
+  //   "blocks": [
+  //     "search-result-layout.desktop",
+  //     "search-result-layout.mobile",
+  //     "search-not-found-layout"
+  //   ]
+  // },
+  // "search-result-layout.desktop": {
+  //   "children": [
+  //     "flex-layout.row#results",
+  //     "search-fetch-more"
+  //   ],
+  //   "props": {
+  //     "pagination": "show-more",
+  //     "preventRouteChange": true,
+  //     "defaultGalleryLayout": "duasColunas"
+  //   }
+  // },
+  // "flex-layout.row#results": { 
+  //   "children": [ 
+  //     "flex-layout.col#search-home"
+  //   ]
+  // },
+  // "flex-layout.col#search-home": { 
+  //   "children": [
+  //     "search-content"
+  //   ]
+  // },
+  // "search-content": { 
+  //   "blocks": ["gallery", "not-found"]
+  // },
+  // "gallery": {
+  //   "props": {
+  //     "layouts": [
+  //       {
+  //         "name": "umaColuna",
+  //         "component": "Produto",
+  //         "itemsPerRow": 1
+  //       },
+  //       {
+  //         "name": "duasColunas",
+  //         "component": "Produto",
+  //         "itemsPerRow": 4
+  //       }
+  //     ],
+  //     "Produto": "product-summary.shelf#home"
+  //   }
+  // },
+  // "search-result-layout.mobile": {
+  //   "children": [
+  //     "flex-layout.row#results",
+  //     "search-fetch-more"
+  //   ],
+  //   "props": {
+  //     "pagination": "show-more",
+  //     "preventRouteChange": true,
+  //     "defaultGalleryLayout": "umaColuna",
+  //     "mobileLayout":{
+  //       "mode1": "small"
+  //     }
+  //   }
+  // }
 }
