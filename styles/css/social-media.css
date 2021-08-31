@@ -1,0 +1,11 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 240px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.link:hover,
+.icon:hover {
+  fill: #e47911!important;
+}

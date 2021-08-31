@@ -8,7 +8,7 @@ export async function getOrderId(
   ctx: Context,
   next: () => Promise<any>
 ) {
-  console.log('--------- EVENTO RECEBIDO --------')
+  console.log('--------- EVENT RECEIVED --------')
 
   const request = await json(ctx.req)
 
@@ -27,7 +27,10 @@ export async function getOrderId(
   const [{email}] = clientEmail
 
   console.log(email)
-  //await ctx.clients.leadsApi.updateLead(email)
+  const isLead = await ctx.clients.leadAPI.getLead(email)
+  if (isLead && isLead?.situation == "Prospecto") {
+    ctx.clients.leadAPI.updateLead(email)
+  }
 
   ctx.body = 'OK'
   ctx.status = 200

@@ -1,0 +1,14 @@
+.footerLayout {
+  background-color: #242f3e;
+  color: #ffffff;
+  margin-top: 50px;
+}
+.footerSpacer--spacer2 {
+  height:50px;
+}
+.footerSpacer--spacer-end {
+  height: 75px;
+}
+.footerSpacer--spacer-end-mobile {
+  height: 20px;
+}

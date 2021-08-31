@@ -1,9 +1,15 @@
 {
   "header": {
-    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+    "blocks": [
+      "header-layout.desktop",
+      "header-layout.mobile"
+    ]
   },
   "header.full": {
-    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+    "blocks": [
+      "header-layout.desktop",
+      "header-layout.mobile"
+    ]
   },
   "header-layout.desktop": {
     "children": [
@@ -14,77 +20,219 @@
     "props": {
       "blockClass": "sticky-header"
     },
-    "children": ["flex-layout.row#desktop"]
+    "children": [
+      "flex-layout.row#desktop-1",
+      "flex-layout.row#desktop-2"
+    ]
   },
-  "flex-layout.row#desktop": {
+  "flex-layout.row#desktop-1": {
     "props": {
-      "horizontalAlign": "center",
+      "blockClass": "header",
+      "paddingTop": 5,
       "verticalAlign": "center",
-      "preventHorizontalStretch": true,
       "preventVerticalStretch": true,
-      "fullWidth": true
+      "fullWidth": true,
+      "colSizing": "auto"
     },
     "children": [
       "flex-layout.col#logo-desktop",
-      "flex-layout.col#spacer",
-      "search-bar",
-      "locale-switcher",
-      "login",
-      "minicart.v2"
+      "flex-layout.col#secondary-links"
     ]
-  },
-  "header-layout.mobile": {
-    "children": ["sticky-layout#mobile"]
-  },
-  "sticky-layout#mobile": {
-    "children": ["flex-layout.row#mobile"]
-  },
-  "flex-layout.row#mobile": {
-    "children": [
-      "drawer",
-      "logo#mobile",
-      "flex-layout.col#spacer",
-      "login",
-      "minicart.v2"
-    ],
-    "props": {
-      "blockClass": "main-header-mobile",
-      "preventHorizontalStretch": true,
-      "preserveLayoutOnMobile": true,
-      "fullWidth": true
-    }
   },
   "flex-layout.col#logo-desktop": {
     "props": {
       "verticalAlign": "middle"
     },
-    "children": ["logo#desktop"]
+    "children": [
+      "logo"
+    ]
   },
-  "drawer": {
-    "children": []
+  "logo": {
+    "props": {
+      "title": "Logo AWS",
+      "href": "/",
+      "url": "assets/logo/aws-logo-desktop.png",
+      "width": 59,
+      "height": 35,
+      "mobileWidth": 48,
+      "mobileHeight": 29
+    }
+  },
+  "flex-layout.col#secondary-links": {
+    "props": {
+      "blockClass": "header",
+      "verticalAlign": "center"
+    },
+    "children": [
+      "link#leads-form",
+      "login#desktop"
+    ]
+  },
+  "link#leads-form": {
+    "props": {
+      "blockClass": "header",
+      "href": "#leads-form",
+      "label": "Entre em contato conosco"
+    }
+  },
+  "login#desktop": {
+    "props": {
+      "iconLabel": "Faça login"
+    }
+  },
+  "flex-layout.row#desktop-2": {
+    "props": {
+      "blockClass": "header",
+      "paddingTop": 1,
+      "paddingBottom": 1,
+      "verticalAlign": "center",
+      "preventVerticalStretch": true,
+      "fullWidth": true,
+      "colSizing": "auto"
+    },
+    "children": [
+      "flex-layout.col#menu-header",
+      "flex-layout.col#search-header",
+      "flex-layout.col#cart"
+    ]
+  },
+  "flex-layout.col#menu-header": {
+    "props": {
+      "verticalAlign": "middle"
+    },
+    "children": [
+      "vtex.menu@2.x:menu#desktop"
+    ]
+  },
+  "vtex.menu@2.x:menu#desktop": {
+    "props": {
+      "orientation": "horizontal"
+    },
+    "children": [
+      "menu-item#product",
+      "menu-item#about-us"
+    ]
+  },
+  "menu-item#product": {
+    "props": {
+      "id": "menu-item-product",
+      "type": "custom",
+      "itemProps": {
+        "href": "/aws",
+        "tagTitle": "Produtos",
+        "text": "Produtos"
+      }
+    }
+  },
+  "menu-item#about-us": {
+    "props": {
+      "id": "menu-item-about-us",
+      "type": "custom",
+      "itemProps": {
+        "href": "/sobre-aws",
+        "tagTitle": "about-us",
+        "text": "Sobre nós"
+      }
+    }
+  },
+  "flex-layout.col#search-header": {
+    "props": {
+      "blockClass": "header",
+      "verticalAlign": "center"
+    },
+    "children": [
+      "search-bar"
+    ]
   },
   "search-bar": {
     "props": {
-      "placeholder": "BUSCAR"
+      "blockClass": "header",
+      "placeholder": "Pesquisar"
     }
   },
-  "flex-layout.col#spacer": {
+  "flex-layout.col#cart": {
     "props": {
-      "width": "grow"
+      "blockClass": "header",
+      "verticalAlign": "center"
+    },
+    "children": [
+      "minicart.v2"
+    ]
+  },
+  "header-layout.mobile": {
+    "children": [
+      "sticky-layout#mobile"
+    ]
+  },
+  "sticky-layout#mobile": {
+    "children": [
+      "flex-layout.row#mobile"
+    ]
+  },
+  "flex-layout.row#mobile": {
+    "props": {
+      "blockClass": "header-mobile",
+      "paddingTop": 1,
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preserveLayoutOnMobile": true,
+      "colSizing": "auto",
+      "fullWidth": true
+    },
+    "children": [
+      "flex-layout.col#logo-desktop",
+      "flex-layout.col#nav-mobile"
+    ]
+  },
+  "flex-layout.col#nav-mobile": {
+    "props": {
+      "blockClass": "header-mobile",
+      "verticalAlign": "center"
+    },
+    "children": [
+      "minicart.v2",
+      "drawer"
+    ]
+  },
+  "drawer": {
+    "props": {
+      "blockClass": "burguer-menu",
+      "isFullWidth": true,
+      "slideDirection": "vertical",
+      "maxWidth": "100vw"
+    },
+    "children": [
+      "search-bar",
+      "login#mobile",
+      "vtex.menu@2.x:menu#mobile"
+    ]
+  },
+  "login#mobile": {
+    "props": {
+      "iconLabel": "Faça login",
+      "blockClass": "login-burguer-menu"
     }
   },
-  "logo#desktop": {
+  "vtex.menu@2.x:menu#mobile": {
     "props": {
-      "title": "Logo",
-      "href": "/",
-      "url": "https://github.com/danicaus/hcdesafiofinal-aws/assets/project/images/logo/aws-logo-desktop.png"
-    }
+      "orientation": "vertical",
+      "blockClass": "burguer-menu"
+    },
+    "children": [
+      "menu-item#product",
+      "menu-item#about-us",
+      "menu-item#contact"
+    ]
   },
-  "logo#mobile": {
+  "menu-item#contact": {
     "props": {
-      "title": "Logo",
-      "href": "/",
-      "url": "https://github.com/danicaus/hcdesafiofinal-aws/assets/project/images/logo/aws-logo-mobile.png"
+      "id": "menu-item-contact",
+      "type": "custom",
+      "itemProps": {
+        "href": "#leads-form",
+        "tagTitle": "contact",
+        "text": "Entre em contato conosco"
+      }
     }
   }
 }

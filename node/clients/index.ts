@@ -1,13 +1,15 @@
 import { IOClients } from "@vtex/api";
 import { OMS } from "@vtex/clients";
-import { LeadClient } from './lead'
+import { LeadAPI } from './lead'
 
 // Extend the default IOClients implementation with our own custom clients.
 export class Clients extends IOClients {
+    // API for get order details
     public get oms() {
       return this.getOrSet('oms', OMS)
     }
-    public get lead() {
-      return this.getOrSet('lead', LeadClient)
+    // API for manage data of DynamoDB on AWS
+    public get leadAPI() {
+      return this.getOrSet('leadAPI', LeadAPI)
     }
 }
