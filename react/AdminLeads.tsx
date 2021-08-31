@@ -2,20 +2,8 @@ import React, { FC } from 'react'
 import { Layout, PageBlock, Table } from 'vtex.styleguide'
 import { useQuery } from 'react-apollo'
 
-import leads from './graphql/getLeads.graphql'
+import getLeads from './graphql/getLeads.graphql'
 
-interface IData {
-    leads: IGetLeads[]
-}
-
-interface IGetLeads {
-    name: string,
-    email: string,
-    phone: string,
-    situation: string,
-    prospectDate: string,
-    clientDate: string
-}
 
 const defaultSchema = {
     properties: {
@@ -47,7 +35,7 @@ const defaultSchema = {
 }
 
 const AdminLeads: FC = () => {
-    const { data, loading, error } = useQuery<IData>(leads)
+    const { data, loading, error } = useQuery(getLeads)
 
     if (error) {
         return (
@@ -68,7 +56,7 @@ const AdminLeads: FC = () => {
                     loading={loading}
                     fullWidth
                     schema={defaultSchema}
-                    items={data?.leads}
+                    items={data?.getLeads}
                     density="high"
                 />
             </PageBlock>

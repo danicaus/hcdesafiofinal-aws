@@ -1,5 +1,5 @@
 query getLeads{
-  leads{
+  getLeads{
     name
     email
     phone
