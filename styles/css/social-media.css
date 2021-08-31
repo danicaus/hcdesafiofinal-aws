@@ -5,11 +5,7 @@
   margin-top: 20px;
   margin-bottom: 20px;
 }
-
-.link:hover {
-  fill: #e47911;
-}
-
+.link:hover,
 .icon:hover {
   fill: #e47911!important;
 }

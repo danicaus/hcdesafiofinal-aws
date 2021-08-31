@@ -71,7 +71,7 @@
   "link#leads-form": {
     "props": {
       "blockClass": "header",
-      "scrollTo": "#leads-form",
+      "href": "#leads-form",
       "label": "Entre em contato conosco"
     }
   },
