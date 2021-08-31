@@ -1,5 +1,5 @@
 import React, { FC } from 'react'
-import { Layout, PageBlock } from 'vtex.styleguide'
+import { Layout, PageBlock, Table } from 'vtex.styleguide'
 import { useQuery } from 'react-apollo'
 
 import leads from './graphql/getLeads.graphql'
@@ -17,37 +17,37 @@ interface IGetLeads {
     clientDate: string
 }
 
+const defaultSchema = {
+    properties: {
+      name: {
+        title: 'Nome',
+        width: 250,
+      },
+      email: {
+        title: 'Email',
+        minWidth: 250,
+      },
+      phone: {
+        title: 'Telefone',
+        minWidth: 100,
+      },
+      situation: {
+        title: 'Situação',
+        minWidth: 100,
+      },
+      prospectDate: {
+        title: 'Prospecto desde',
+        minWidth: 200,
+      },
+      clientDate: {
+        title: 'Cliente desde',
+        minWidth: 200,
+      },
+    },
+}
+
 const AdminLeads: FC = () => {
-    const { data, /*loading,*/ error } = useQuery<IData>(leads)
-
-    // const usersColumns = [
-    //     {
-    //       id: 'name',
-    //       title: 'Name',
-    //     },
-    //     {
-    //       id: 'email',
-    //       title: 'Email',
-    //     },
-    //     {
-    //       id: 'phone',
-    //       title: 'Phone',
-    //     },
-    //     {
-    //       id: 'situation',
-    //       title: 'Situation',
-    //     },
-    //     {
-    //       id: 'prospectDate',
-    //       title: 'ProspectDate',
-    //     },
-    //     {
-    //       id: 'clientDate',
-    //       title: 'ClientDate',
-    //     }
-    // ]
-
-    // const mockUsersArray = [{ name: "loading", email:"loading", phone:"loading", situation:"loading", prospectDate:"loading", clientDate:"loading" }]
+    const { data, loading, error } = useQuery<IData>(leads)
 
     if (error) {
         return (
@@ -64,30 +64,13 @@ const AdminLeads: FC = () => {
     return (
         <Layout>
             <PageBlock title="Leads" subtitle="Lista de leads cadastradas no sistema." variation="full">
-                <table className="leads-list">
-                    <thead>
-                        <tr>
-                            <th>name</th>
-                            <th>email</th>
-                            <th>phone</th>
-                            <th>situation</th>
-                            <th>clientDate</th>
-                            <th>prospectDate</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {data?.leads.map(lead => (
-                            <tr key={lead.email}>
-                                <td>{lead.name}</td>
-                                <td>{lead.email}</td>
-                                <td>{lead.phone}</td>
-                                <td>{lead.situation}</td>
-                                <td>{lead.clientDate}</td>
-                                <td>{lead.prospectDate}</td>
-                            </tr>
-                        ))}
-                    </tbody>
-                </table>
+                <Table
+                    loading={loading}
+                    fullWidth
+                    schema={defaultSchema}
+                    items={data?.leads}
+                    density="high"
+                />
             </PageBlock>
         </Layout>
     )
