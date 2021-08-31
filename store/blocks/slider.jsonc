@@ -33,7 +33,7 @@
       "headline": "AWS Lambda",
       "subhead": "Execute código sem se preocupar com servidores ou clusters. Pague somente pelo que usar.",
       "callToActionMode": "button",
-      "callToActionText": "Começar a usar o AWS Lambda",
+      "callToActionText": "Entenda o AWS Lambda",
       "callToActionUrl": "/aws-lambda/p",
       "textAlignment": "center"
     }
@@ -48,8 +48,8 @@
       "headline": "Amazon DynamoDB",
       "subhead": "Serviço de banco de dados NoSQL rápido e flexível para qualquer escala.",
       "callToActionMode": "button",
-      "callToActionText": "Crie uma conta da AWS",
-      "callToActionUrl": "/amazon-dynamo-db/p",
+      "callToActionText": "Saiba mais sobre o DynamoDB",
+      "callToActionUrl": "/amazon-dynamodb/p",
       "textAlignment": "center"
     }
   },
@@ -78,7 +78,7 @@
       "headline": "Amazon EC2",
       "subhead": "Capacidade de computação segura e redimensionável para oferecer suporte a praticamente qualquer carga de trabalho.",
       "callToActionMode": "button",
-      "callToActionText": "Comece a usar o Amazon EC2",
+      "callToActionText": "Veja como usar o Amazon EC2",
       "callToActionUrl": "/amazon-ec2/p",
       "textAlignment": "center"
     }
@@ -93,7 +93,7 @@
       "headline": "Amazon Virtual Private Cloud",
       "subhead": "Crie em uma rede virtual isolada logicamente na Nuvem AWS.",
       "callToActionMode": "button",
-      "callToActionText": "Crie uma conta da AWS",
+      "callToActionText": "Entenda o Amazon VPC",
       "callToActionUrl": "/amazon-vpc/p",
       "textAlignment": "center"
     }
@@ -108,7 +108,7 @@
       "headline": "Amazon S3 Glacier e<br/>S3 Glacier Deep Archive",
       "subhead": "Classes de armazenamento de objetos de longo prazo, seguras e resilientes do Amazon S3 a partir de 1 USD por terabyte por mês.",
       "callToActionMode": "button",
-      "callToActionText": "Comece a usar o Amazon S3",
+      "callToActionText": "Leia mais sobre o Amazon S3",
       "callToActionUrl": "/amazon-s3/p",
       "textAlignment": "center"
     }
