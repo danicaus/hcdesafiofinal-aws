@@ -7,6 +7,7 @@
   "mustUpdateAt": "2022-01-04",
   "categories": [],
   "builders": {
+    "admin": "0.x",
     "assets": "0.x",
     "docs": "0.x",
     "graphql": "1.x",
@@ -42,17 +43,23 @@
       }
     },
     {
+      "name": "OMSViewer"
+    },
+    {
       "name": "outbound-access",
       "attrs": {
-        "host": "portal.vtexcommercestable.com.br",
+        "host": "z584vx4z2e.execute-api.us-east-2.amazonaws.com/",
         "path": "*"
       }
+    },
+    {
+      "name": "colossus-fire-event"
     },
     {
       "name": "OMSViewer"
     },
     {
-      "name": "vbase-read-write"
+      "name": "graphql-query"
     }
   ],
   "dependencies": {

@@ -1,16 +1,16 @@
 export interface Lead{
-  situation: String
-  phone: String!
-  email: String!
   name: String!
-  clientDate: String
+  email: String!
+  phone: String!
+  situation: String
   prospectDate: String
+  clientDate: String
 }
 
 export interface LeadInput {
-  phone: String!
-  email: String!
   name: String!
+  email: String!
+  phone: String!
 }
 
 

@@ -1,0 +1,10 @@
+query getLeads{
+  leads{
+    name
+    email
+    phone
+    situation
+    prospectDate
+    clientDate
+  }
+}

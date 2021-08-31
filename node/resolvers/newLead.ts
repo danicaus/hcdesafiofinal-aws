@@ -1,11 +1,11 @@
-import type { LeadInput } from '../typings/custom'
+import type { LeadInput } from '../typings/lead'
 
 interface Args {
-  lead: LeadInput
+  formData: LeadInput
 }
 
 export const newLead = (
   _: any,
-  { lead }: Args,
-  { clients: { lead: leadClient } }: Context
-) => leadClient.newLead(lead)
+  { formData }: Args,
+  { clients: { leadAPI: leadClient } }: Context
+) => leadClient.newLead(formData)
