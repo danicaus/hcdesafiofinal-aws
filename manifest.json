@@ -2,8 +2,8 @@
   "vendor": "vtex",
   "name": "admin-example",
   "version": "0.1.0",
-  "title": "GraphQL Example",
-  "description": "Reference app for VTEX IO GraphQL Services",
+  "title": "AWS Grupo 23",
+  "description": "Página com temática AWS",
   "mustUpdateAt": "2022-01-04",
   "categories": [],
   "builders": {
