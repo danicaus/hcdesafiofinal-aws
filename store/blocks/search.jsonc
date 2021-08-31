@@ -44,7 +44,7 @@
   },
   "search-content": {
     "props": {
-      "blocklClass": "search-content-gallery"
+      "blockClass": "search-content-gallery"
     },
     "blocks": ["gallery#search-result", "not-found"]
   },
@@ -68,7 +68,7 @@
       "product-summary-name#search-result",
       "product-summary-description#search-result",
       "product-summary-price",
-      "product-summary-buy-button#search-result"
+      "add-to-cart-button#search-result"
     ]
   },
   "product-summary-image#search-result": {
@@ -86,9 +86,9 @@
       "blockClass": "description-search-result"
     }
   },
-  "product-summary-buy-button#search-result": {
+  "add-to-cart-button#search-result": {
     "props": {
-      "blockClass": "buy-button-search-result"
+      "blockClass": "add-to-cart-button-search-result"
     }
   },
   "rich-text#header-result": {

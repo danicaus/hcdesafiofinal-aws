@@ -1,6 +1,9 @@
-/*Link do header*/
-.link.link--header {
+/* Header Link */
+.link.link--header,
+.link.link--header:hover {
   text-decoration: none;
+}
+.link.link--header {
   color: #dddddd;
   padding-right: 8px;
   padding-left: 10px;
@@ -9,22 +12,21 @@
 }
 .link.link--header:hover {
   color: #f8991d;
-  text-decoration: none;
 }
 
-/*Link do footer*/
-.link--link-col {
+/* Footer link */
+.link--link-col,
+.link--link-group {
   color: #ffffff;
   text-decoration: none;
   font-size: 14px;
+}
+.link--link-col {
   margin-bottom: 5px;
 }
 .link--link-col:hover{
   color: #e47911;
 }
 .link--link-group {
-  color: #ffffff;
-  text-decoration: none;
-  font-size: 14px;
   margin-bottom: 50px;
 }

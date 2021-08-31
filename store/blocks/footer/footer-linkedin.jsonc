@@ -40,20 +40,12 @@
   "link#linkedin6": {
     "props": {
       "blockClass": ["link-col"],
-      "href": "/",
-      "target": "_blank",
-      "label": "Gisele R. Mascarenhas"
-    }
-  },
-  "link#linkedin7": {
-    "props": {
-      "blockClass": ["link-col"],
       "href": "https://www.linkedin.com/in/ivancmc",
       "target": "_blank",
       "label": "Ivan Cardoso"
     }
   },
-  "link#linkedin8": {
+  "link#linkedin7": {
     "props": {
       "blockClass": ["link-col"],
       "href": "https://www.linkedin.com/in/leomssilva",
@@ -61,7 +53,7 @@
       "label": "Leonardo M. S. da Silva"
     }
   },
-  "link#linkedin9": {
+  "link#linkedin8": {
     "props": {
       "blockClass": ["link-col"],
       "href": "https://www.linkedin.com/in/natansouzaa/",
@@ -69,7 +61,7 @@
       "label": "Natan Souza"
     }
   },
-  "link#linkedin10": {
+  "link#linkedin9": {
     "props": {
       "blockClass": ["link-col"],
       "href": "https://www.linkedin.com/in/paulo-eduardo-de-souza/",

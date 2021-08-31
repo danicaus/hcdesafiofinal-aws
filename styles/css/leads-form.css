@@ -1,0 +1,57 @@
+.LeadsFormContainer,
+.LeadsFormInputContainer {
+  display: flex;
+  flex-direction: column;
+}
+.LeadsFormContainer {
+  padding: 1rem;
+  gap: 1rem;
+}
+.LeadsFormLabel,
+.LeadsFormInput {
+  color: #16191f;
+  font-size: 14px;
+  line-height: 20px;
+}
+.LeadsFormInput {
+  padding: 4px 10px;
+  width: 100%;
+  background-color: #ffffff;
+  height: 30px;
+  border: 1px solid #aab7b8;
+  border-radius: 2px;
+}
+.LeadsFormButton {
+  margin: 10px 0;
+  background: #ec7211;
+  border-radius: 2px;
+  border: 1px solid #ec7211;
+  padding: 4px 20px;
+  font-weight: 700;
+  color: #ffffff;
+  width: 100%;
+  cursor: pointer;
+}
+.LeadsFormButton:hover {
+  background: #eb5f07;
+  border-color: #dd6b10;
+  width: 100%;
+}
+.FormConfirmationTitle {
+  color: #16191f;
+  font-size: 1.5rem;
+}
+.LeadsFormValidation {
+  color: #d13212;
+  font-size: 10px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  margin-top: 2px;
+  visibility: hidden;
+}
+.LeadsFormInputContainer--invalid .LeadsFormValidation{
+  visibility: visible;
+}
+.LeadsFormInputContainer--invalid .LeadsFormInput{
+  outline: 1px solid #d13212;
+}

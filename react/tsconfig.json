@@ -18,7 +18,8 @@
     "./**/*.d.ts",
     "./**/*.tsx",
     "./**/*.ts",
+    "./**/*.graphql",
     "LeadsForm.jsx",
-    "./**/*.graphql"
+    "SocialMedia.jsx" 
   ]
 }

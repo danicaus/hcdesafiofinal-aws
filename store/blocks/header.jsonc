@@ -71,7 +71,7 @@
   "link#leads-form": {
     "props": {
       "blockClass": "header",
-      "scrollTo": "#leads-form",
+      "href": "#leads-form",
       "label": "Entre em contato conosco"
     }
   },
@@ -92,7 +92,7 @@
     },
     "children": [
       "flex-layout.col#menu-header",
-      "flex-layout.col#search",
+      "flex-layout.col#search-header",
       "flex-layout.col#cart"
     ]
   },
@@ -118,7 +118,7 @@
       "id": "menu-item-product",
       "type": "custom",
       "itemProps": {
-        "href": "#",
+        "href": "/aws",
         "tagTitle": "Produtos",
         "text": "Produtos"
       }
@@ -135,7 +135,7 @@
       }
     }
   },
-  "flex-layout.col#search": {
+  "flex-layout.col#search-header": {
     "props": {
       "blockClass": "header",
       "verticalAlign": "center"
