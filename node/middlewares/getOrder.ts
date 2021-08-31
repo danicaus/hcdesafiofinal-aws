@@ -8,7 +8,7 @@ export async function getOrderId(
   ctx: Context,
   next: () => Promise<any>
 ) {
-  console.log('--------- EVENTO RECEBIDO --------')
+  console.log('--------- EVENT RECEIVED --------')
 
   const request = await json(ctx.req)
 
