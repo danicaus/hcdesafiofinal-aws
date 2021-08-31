@@ -53,6 +53,13 @@
       }
     },
     {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "portal.vtexcommercestable.com.br",
+        "path": "*"
+      }
+    },
+    {
       "name": "colossus-fire-event"
     },
     {

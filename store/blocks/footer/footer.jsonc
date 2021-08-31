@@ -112,7 +112,7 @@
   "link#workspace": {
     "props": {
       "blockClass": "link-col",
-      "href": "/",
+      "href": "https://grupo23aws--hiringcoders202123.myvtex.com/",
       "label": "Workspace"
     }
   },
